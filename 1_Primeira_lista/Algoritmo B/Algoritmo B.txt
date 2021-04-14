@@ -1,0 +1,7 @@
+ALGORITMO
+DECLARE preço, preço_novo NUMÉRICO
+ESCREVA(“Digite o preço: “)
+LEIA preço
+preço_novo <== preço*0.1-preço
+ESCREVA(“O preço final é”, preço_novo)
+FIM_ALGORITMO

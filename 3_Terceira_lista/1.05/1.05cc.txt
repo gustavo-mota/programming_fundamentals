@@ -1,0 +1,26 @@
+ALGORITMO
+DECLARE	n, p , maior NUMÉRICO
+	continua = VERDADEIRO LÓGICO
+maior<==1
+p<==1
+ESCREVA "Digite um valor para o comparativo(digite zero se desejar parar)"
+LEIA n
+
+ENQUANTO (continua) FAÇA
+INÍCIO
+	SE (n=0)
+	ENTÃO	INÍCIO
+        	continua<==FALSO
+        	ESCREVA maior
+		FIM
+
+	SENÃO	INÍCIO
+        	SE p>n
+		ENTÃO maior<==p
+        	SENÃO maior<==n
+		FIM
+        p<==n
+        ESCREVA "Digite um valor para o comparativo"
+	LEIA n
+FIM
+FIM_ALGORITMO

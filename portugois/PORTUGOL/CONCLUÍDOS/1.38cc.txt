@@ -1,0 +1,59 @@
+ALGORITMO
+DECLARE n,par,impar,parmaior,imparmaior,qpar,qimpar,mediapar,mediaimpar NUMÉRICO
+n<==1
+par<==0
+impar<==0
+qpar<==0
+qimpar<==0
+parmaior<==0
+imparmaior<==0
+ENQUANTO (n>=0) FAÇA:
+	INÍCIO
+    	ESCREVA "Digite um inteiro negativo para descontinuar."
+    	ESCREVA 'Digite um valor'
+	LEIA n
+	SE n>=0
+	ENTÃO	INÍCIO
+
+        	SE n%2==0
+		ENTÃO INÍCIO
+
+            		SE n>parmaior
+                	ENTÃO	INÍCIO 
+				parmaior=n
+                		qpar <== qpar + 1
+                		par <== par + n
+				FIM
+
+            		SENÃO	INÍCIO
+                		qpar=qpar+1
+                		par<==par+n
+				FIM
+
+			FIM
+
+        	SENÃO	INÍCIO
+
+			SE n>imparmaior
+			ENTÃO	INÍCIO
+		                imparmaior=n
+                		qimpar <== qimpar + 1
+                		impar <== impar + n
+				FIM
+
+	            	SENÃO 	INÍCIO
+				qimpar<==qimpar+1
+				impar<==impar+n
+				FIM
+			FIM
+
+		FIM
+	SENÃO INÍCIO
+        	mediapar<==par/qpar
+       		mediaimpar<==impar/qimpar
+	FIM
+ESCREVA "Media dos valores pares:", mediapar, "media dos impares:", mediaimpar,"maior valor par:", parmaior, 'maior valor impar:', imparmaior
+
+
+
+FIM_ALGORITMO

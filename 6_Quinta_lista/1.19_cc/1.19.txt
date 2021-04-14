@@ -1,0 +1,36 @@
+ALGORITMO
+DECLARE matriz[12,4],mês,semana,ij,s,r,sm,ss,st NUMÉRICO
+sm <-- 0
+ss <-- 0 
+st <-- 0
+PARA i<--1 ATÉ 12 FAÇA
+INÍCIO
+	PARA j<---1 ATÉ 4 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		st <-- st + matriz[i,j]
+
+	FIM
+FIM
+PARA mês<--1 ATÉ 12 FAÇA
+INÍCIO
+	PARA s<---1 ATÉ 4 FAÇA
+	INÍCIO
+		sm <-- sm + matriz[mês,s]
+	FIM
+	ESCREVA "Mês",mês," vendeu:",sm
+	sm <--0
+FIM
+ESCREVA "\n"
+PARA semana<--1 ATÉ 4 FAÇA
+INÍCIO
+	PARA r<--1 12 FAÇA
+	INÍCIO
+		ss <-- ss + matriz[r,semana]
+	FIM
+	ESCREVA "Semana",semana," vendeu:",ss
+	ss <-- 0
+FIM
+ESCREVA "\n"
+ESCREVA "Total de vendas:", st
+FIM_ALGORITMO

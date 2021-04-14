@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE 
+investimento NUMÉRICO
+tipo LITERAL
+ESCREVA "Digite o valor do investimento"
+LEIA investimento
+ESCREVA "Digite o tipo de investimento(P para poupança e F para fundo de renda fixa)"
+LEIA tipo
+SE tipo == "P"
+ENTÃO
+	INÍCIO
+	investimento <== (investimento*0.1)+investimento
+	ESCREVA "Valor corrigido:", investimento
+	FIM
+SE tipo == "F"
+ENTÃO
+	INÍCIO
+	investimento <== (investimento*0.15)+investimento
+	ESCREVA "Valor corrigido:", investimento
+	FIM
+SENÃO
+ESCREVA "Digite corretamente qual o tipo de investimento."
+FIM_ALGORITMO

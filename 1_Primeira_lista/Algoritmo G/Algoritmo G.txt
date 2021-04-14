@@ -1,0 +1,9 @@
+ALGORITMO
+DELCARE salariominimo, salariofuncionario, info NUMÉRICO
+ESCREVA(“Digite o valor do salario minimo vigente: “)
+LEIA salariominimo
+ESCREVA(“Digite o valor do salario minimo do funcionario: “)
+LEIA salariofuncionario
+Info <== salariofuncionario/salariominimo
+ESCREVA(“A quantidade de salarios minimos recebidos pelo funcionario eh: “, info)
+FIM_ALGORITMO

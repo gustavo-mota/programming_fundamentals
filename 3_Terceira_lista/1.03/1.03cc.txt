@@ -1,0 +1,16 @@
+ALGORITMO
+DECLARE soma, media,i,n,p NUMÉRICO
+ESCREVA "digite quantos números deseja inserir"
+LEIA n
+i<==0
+soma<==0
+ENQUANTO (i<n) FAÇA
+INÍCIO
+	ESCREVA "Digite um número"
+	LEIA p
+	soma<==soma+p
+	i<==i+1
+FIM
+media<==soma/n
+ESCREVA media
+FIM_ALGORITMO

@@ -1,0 +1,13 @@
+ALGORITMO
+DECLARE a,b,ano NUMÉRICO
+a<==5000000
+b<==7000000
+ano<==1
+ENQUANTO (a<=b) FAÇA:
+	INÍCIO
+    	a<==(a*0.03)+a
+    	b<==(b*0.02)+b
+    	ano<==ano+1
+	FIM
+ESCREVA 'Necessário cerca de:',ano, "anos"
+FIM_ALGORITMO

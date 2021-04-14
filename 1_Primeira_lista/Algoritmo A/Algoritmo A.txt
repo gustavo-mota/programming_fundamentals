@@ -1,0 +1,7 @@
+ALGORITMO
+DECLARE n1, n2, nota_final NUMÉRICO
+ESCREVA(“Digite as duas notas: “)
+LEIA n1,n2
+nota_final <== (n1*2+n2*3)/5
+ESCREVA(“A nota final é”, nota_final)
+FIM_ALGORITMO

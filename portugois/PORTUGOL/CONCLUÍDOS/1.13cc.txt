@@ -1,0 +1,19 @@
+ALGORTIMO
+DECLARE n,pares, impares,i,x NUMÉRICO
+ESCREVA "Digite quantos inteiros deseja inserir"
+LEIA n
+pares<==0
+impares<==0
+i<==1
+ENQUANTO (i<=n) FAÇA
+INÍCO
+	ESCREVA "digite um valor"
+	LEIA x
+	SE (x%2=0)
+        ENTÃO pares<==pares+1
+    	SENÃO impares<==impares+1
+    	i<==i+1
+FIM
+ESCREVA "Sao", pares, "valores pares inseridos."
+ESCREVA "Sao", impares, "valores impares inseridos."
+FIM_ALGORITMO

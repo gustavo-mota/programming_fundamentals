@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE num,soma NUMÉRICO
+LEIA num
+soma <-- somatorio(num)
+ESCREVA soma
+FIM_ALGORITMO
+SUB-ROTINA somatorio(numero NUMÉRICO)
+DECLARE somado, i, NUMÉRICO
+somado <-- 0
+PARA i<--1 ATÉ numero FAÇA
+INÍCIO
+	somado <-- somado + 1
+FIM
+SE numero < 0 
+ENTÃO somado <-- somado * -1
+RETORNE somado
+FIM_SUB-ROTINA somatorio

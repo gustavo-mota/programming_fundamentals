@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE num, multi, produto NUMÉRICO
+LEIA num
+LEIA multi
+produto <-- multiplica(num, multi)
+ESCREVA produto
+FIM_ALGORITMO
+SUB-ROTINA multiplica(multiplicado NUMÉRICO, multiplicador NUMÉRICO)
+DECLARE i NUMÉRICO
+i <-- 1
+resultado <-- multiplicado
+ENQUANTO i < multiplicador FAÇA	
+INÍCIO
+	resultado <-- resultado + multiplicado
+	i <-- i + 1
+FIM
+RETORNE resultado
+FIM_SUB-ROTINA multiplica

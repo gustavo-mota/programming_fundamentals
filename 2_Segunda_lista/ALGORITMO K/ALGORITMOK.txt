@@ -1,0 +1,11 @@
+ALGORITMO
+DECLARE numero, resto NUMÉRICO
+ESCREVA "Programa que testa se determinado numero e ou nao divisivel por 5"
+ESCREVA "Digite o valor"
+LEIA numero
+resto <== numero%5
+SE resto == 0
+ENTÃO ESCREVA "E divisivel"
+SENÃO
+ESCREVA "Nao e divisivel"
+FIM_ALGORITMO

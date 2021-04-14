@@ -1,0 +1,24 @@
+ALGORITMO
+DECLARE altura, alt[50], k, i, j, sex[50], fichas[[alt],[sex]] NUMÉRICO
+DECLATE nome[50], nome LITERAL
+PARA i <-- 1 ATÉ 50 FAÇA PASSO 1	
+INÍCIO
+	ESCREVA “Digite a altura:”
+	LEIA altura
+	alt[i] <-- altura
+	ESCREVA “Sexo: 1-Masculino  2- Feminino”
+	LEIA sexo
+	sex[i] <-- sexo
+FIM
+ESCREVA "Digite o nome de acordo com a altura:"
+PARA j <-- 1 ATÉ 50 FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Altura”, alt[j], “Nome:”
+	LEIA nom
+	nome[j] <-- nom	
+FIM
+PARA k <-- 1 ATÉ 50 FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Nome:”, nome[k], “Altura”, alt[k]
+FIM
+FIM_ALGORITMO.

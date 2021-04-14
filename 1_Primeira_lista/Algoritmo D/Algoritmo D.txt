@@ -1,0 +1,7 @@
+ALGORITMO
+DECLARE pesokg, pesogm NUMÉRICO
+ESCREVA(“Digite o peso em quilogramas: “)
+LEIA pesokg
+pesogm <== pesokg*1000
+ESCREVA(“O peso em gramas eh: “, pesogm)
+FIM_ALGORITMO

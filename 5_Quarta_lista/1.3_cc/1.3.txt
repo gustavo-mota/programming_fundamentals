@@ -1,0 +1,13 @@
+ALGORITMO
+DECLARE s, lista[10],i, j NUMÉRICO
+j<--1
+PARA CADA i<--1 ATÉ 20 FAÇA
+	SE (i MOD 2 != 0)
+	ENTÃO lista[j]<--i**2
+	j<--j+1
+FIM_PARA
+PARA CADA s<--1 ATÉ 20 FAÇA PASSO 1
+INÍCIO
+	ESCREVA lista[s]
+FIM
+FIM_ALGORITMO

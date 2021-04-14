@@ -1,0 +1,13 @@
+ALGORITMO
+DECLARE salario NUMÉRICO
+ESCREVA "Digite o salário"
+LEIA salario
+SE salario > 900
+ENTÃO
+	INÍCIO
+	ESCREVA "Não terá aumento"
+	FIM
+SENÃO
+salario <== (salario*0.3)+salario
+ESCREVA "Salario reajustado é:", salario
+FIM_ALGORITMO

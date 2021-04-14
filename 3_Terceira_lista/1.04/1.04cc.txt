@@ -1,0 +1,12 @@
+ALGORITMO
+DECLARE i,n,p NUMÉRICO
+ESCREVA "Digite quantas potencias de dois deseja ver"
+LEIA n 
+i<==0
+ENQUANTO (i<n) FAÇA
+INÍCIO
+	p<==2**i
+	i<==i+1
+	ESCREVA p
+FIM
+FIM_ALGORITMO

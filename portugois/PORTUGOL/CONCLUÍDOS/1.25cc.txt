@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE n,z,r,s,contador NUMÉRICO
+ESCREVA 'Digite quantos termos deseja'
+LEIA n
+z<==0
+r<==1
+s<==3
+contador<==0
+ESCREVA r
+ENQUANTO (contador<n) FAÇA
+INÍCIO
+	r<==s+r
+    	ESCREVA r
+    	s<==s+2
+    	contador<==contador+1
+FIM
+FIM_ALGORITMO

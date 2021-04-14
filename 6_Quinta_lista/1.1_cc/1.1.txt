@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE matriz[6,3], maior, menor,i,j,s,r NUMÉRICO
+PARA i <-- 1 ATÉ 6 FAÇA PASSO 1
+INÍCIO
+	PARA j <-- 1 ATÉ 3 FAÇA PASSO 1		
+	INÍCIO
+		LEIA matriz[i][j]
+	FIM
+FIM
+maior <-- 0
+menor <-- matriz[1][1]
+PARA s <-- 1 ATÉ 6 FAÇA PASSO 1	
+INÍCIO
+	PARA r <-- 1 ATÉ 3 FAÇA PASSO 1
+	INÍCIO
+		SE (matriz[s][r] > maior)
+		ENTÃO maior <-- matriz[s][r]
+		SENÃO SE (matriz[s][r] < menor)
+		ENTÃO menor <-- matriz[s][r]
+	FIM	
+FIM
+ESCREVA "Maior:", maior,".Menor:",menor
+FIM_ALGORITMO

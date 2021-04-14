@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE lista[10], soma,j, i, altura,media NUMÉRICO
+soma<--0
+PARA CADA i<--1 ATÉ 10 FAÇA
+INÍCIO
+    	ESCREVA "Digite a altura"
+	LEIA altura
+    	soma<--soma+altura
+    	lista[i]<--altura
+FIM
+media<--soma/10
+ESCREVA media
+PARA CADA j<--1 ATÉ 10 FAÇA
+INÍCIO
+	SE (lista[j]>media)
+        ENTÃO ESCREVA lista[j]
+FIM
+FIM_ALGORITMO

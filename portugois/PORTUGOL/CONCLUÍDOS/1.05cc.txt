@@ -1,0 +1,34 @@
+ALGORITMO
+DECLARE 
+n, p , maior NUMÉRICO
+continua LÓGICO
+
+continua<==True
+maior<==1
+p<==1
+
+ESCREVA "Digite um valor para o comparativo(digite zero se desejar parar)"
+LEIA n
+
+ENQUANTO (continua) FAÇA:
+	SE (n==0)
+	ENTÃO 
+		INÍCIO
+        	continua<==False
+        	ESCREVA maior
+		FIM
+
+	SENÃO
+	ENTÃO 
+		INÍCIO
+        	SE p>n
+			ENTÃO maior<==p
+        	SENÃO
+           		ENTÃO maior<==n
+		FIM
+
+        p<==n
+        ESCREVA "Digite um valor para o comparativo"
+	LEIA n
+
+FIM_ALGORITMO

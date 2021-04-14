@@ -1,0 +1,13 @@
+ALGORITMO
+DECLARE p, n NUMÉRICO
+ESCREVA "Digite um valor para calcular o fatorial"
+LEIA n
+p <== 1
+ENQUANTO (n>0):
+	INÍCIO
+	p<==p*n
+	n<==n-1
+	FIM
+ESCREVA p
+
+FIM_ALGORITMO

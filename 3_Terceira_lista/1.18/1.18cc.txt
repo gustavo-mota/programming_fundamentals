@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE	a,b,j NUMÉRICO
+	primos=VERDADEIRO LÓGICO
+ESCREVA "digite um valor"
+LEIA a
+ESCREVA "digite outro valor"
+LEIA b
+j<==2
+ENQUANTO (j<a OU j<b):
+INÍCIO
+	SE (a MOD j =0) E (b MOD j =0) FAÇA
+        ENTÃO primos=False
+    	j<==j+1
+FIM
+SE primos=VERDADEIRO
+ENTÃO ESCREVA "São primos entre si."
+SENÃO ESCREVA "Não são primos entre si."
+FIM_ALGORITMO

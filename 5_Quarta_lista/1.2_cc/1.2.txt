@@ -1,0 +1,14 @@
+ALGORITMO
+DECLARE i, s, posicao, lista[100] NUMERICO
+posicao <-- 1
+PARA CADA i<-- 1 ATE 501 FAÇA
+INÍCIO
+	SE (i MOD 5 = 0)
+	ENTÃO lista[posicao]<--i 
+	posicao<--posicao+1
+FIM
+PARA CADA s<--1 ATÉ 100 FAÇA PASSO 1
+INÍCIO
+	ESCREVA lista[s]
+FIM
+FIM_ALGORITMO

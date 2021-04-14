@@ -1,0 +1,38 @@
+ALGORITMO
+DECLARE matrix[3,3],matriz[3,3],i,j,s,r,matric[3,3],t,u NUMÉRICO
+PARA i <-- 1 ATÉ 3 FAÇA //leitura e primeiro giro de 90//
+INÍCIO
+	PARA j <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		SE i=1
+		ENTÃO matrix[j, i+2] <-- matriz[i,j]
+		SENÃO SE i=2
+		ENTÃO matrix[j,i] <-- matriz[i,j]
+		SENÃO SE i=3
+		ENTÃO matrix[j,i-2] <-- matriz[i,j]
+	FIM
+FIM
+
+PARA t <-- 1 ATÉ 3 FAÇA //segundo giro de 90//
+INÍCIO
+	PARA u <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		SE t=1
+		ENTÃO matric[u,t+2] <-- matrix[t,u]
+		SENÃO SE t=2
+		ENTÃO matric[u,t] <-- matrix[t,u]
+		SENÃO SE t=3
+		ENTÃO matric[u,t-2] <-- matrix[t,u]
+	FIM
+FIM
+
+PARA s <-- 1 ATÉ 3 FAÇA //imprimir a matrix final//
+INÍCIO
+	PARA r <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		ESCREVA matric[s,r], end=" "
+	FIM
+	ESCREVA "\n"
+FIM
+FIM_ALGORITMO

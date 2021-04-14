@@ -1,0 +1,11 @@
+ALGORITMO
+DECLARE a,r NUMÉRICO
+ESCREVA "Teste: saber se determinado numero e ou nao multiplo de tres"
+ESCREVA "Digite um valor"
+LEIA a
+r <== a%3
+SE r == 0
+ENTÃO ESCREVA "e multiplo"
+SENÃO
+ESCREVA "Nao e multiplo"
+FIM_ALGORITMO

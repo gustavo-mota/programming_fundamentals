@@ -1,0 +1,42 @@
+ALGORITMO
+DECLARE máximo, n, i, k, max, h NUMÉRICO
+DECLARE voto, candidato LITERAL
+ESCREVA “Digite o número de candidatos:”
+LEIA n
+DECLARE candidatos [n], votos_candidatos[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Candidato:”, i
+	ESCREVA “Digite o nome:”	
+	LEIA candidato
+	candidatos [i] <-- candidato	
+	votos_candidatos[1] <-- 0
+FIM
+ENQUANTO (voto != "fim") FAÇA
+INÍCIO
+	ESCREVA “Insira um voto:”
+	LEIA voto
+	PARA k <-- 1 ATÉ n FAÇA PASSO 1
+	INÍCIO
+		SE (voto = candidatos[k])
+		ENTÃO votos_candidatos[k] <-- votos_candidatos[k] + 1
+	FIM
+FIM	
+max <-- votos_candidatos[1]
+PARA h <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	SE (votos_candidatos[h] > max)
+	ENTÃO max <-- votos_candidatos[j]
+FIM
+vencedor <-- max 
+PARA j <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	SE (votos_candidatos[j] = vencedor)
+	ENTÃO	INÍCIO
+		ESCREVA “Vencedor:”, candidatos[j]
+		maximo <-- maximo + 1
+		FIM
+FIM
+SE (máximo >= 2)
+ENTÃO ESCREVA “Empate.”
+FIM_ALGORITMO.

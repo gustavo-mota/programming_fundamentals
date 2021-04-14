@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE fatx,j,e,i,s,r,x NUMÉRICO
+ESCREVA "Digite o valor de x"
+LEIA x
+j<==1
+fatx<==1
+e<==1+x
+i<==1
+r<==2
+s<==2
+ENQUANTO (i<=16) FAÇA
+INÍCIO
+	while j<=s:
+	INÍCIO
+        	fatx <== fatx * j
+        	j <== j + 1
+	FIM
+    	e<==e+((x**r)/fatx)
+    	r<==r+2
+    	i<==i+1
+FIM
+ESCREVA e
+FIM_ALGORITMO

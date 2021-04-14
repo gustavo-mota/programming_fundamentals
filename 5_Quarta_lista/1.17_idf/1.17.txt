@@ -1,0 +1,25 @@
+ALGORITMO
+DECLARE X,Y,i,j,s,somavetor NUMERICO
+ESCREVA "Digite quantos elementos há nos vetores"
+LEIA n
+DECLARE vetorx[n], vetory[n] NUMÉRICO
+PARA i<--1 ATÉ n FAÇA
+INÍCIO
+	ESCREVA "Digite um termo"
+	LEIA X
+	x[i]<--X
+FIM
+PARA j<--1 ATÉ n FAÇA
+INÍCIO
+	ESCREVA "Digite um termo"
+	LEIA Y
+	y[j]<--Y
+FIM
+somavetor<--0
+PARA s<--1 ATÉ n FAÇA
+INÍCIO
+    	p<--x[s]*y[s]
+    	somavetor<--somavetor+p
+FIM
+ESCREVA "O produto escalar entre os vetores é", somavetor
+FIM_ALGORITMO

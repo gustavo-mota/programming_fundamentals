@@ -1,0 +1,11 @@
+ALGORTIMO
+DECLARE basemaior, basemenor, altura, área NUMÉRICO
+ESCREVA(“Digite o valor da base maior: “)
+LEIA basemaior
+ESCREVA(“Digite o valor da base menor: “)
+LEIA basemenor
+ESCREVA(“Digite a altura: “)
+LEIA altura
+area <== ((basemaior+basemenor)*altura)/2
+ESCREVA(“A área do trapezio eh: “, area)
+FIM_ALGORITMO

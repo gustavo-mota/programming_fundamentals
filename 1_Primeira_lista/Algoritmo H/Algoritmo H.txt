@@ -1,0 +1,15 @@
+ALGORITMO
+DECLARE x, y, h, i NUMÉRICO
+DECLARE A: VETOR [1...10] INTEIROS
+ESCREVA(“digite o valor que deseja achar tabuada: “)
+LEIA x
+y <== x*10
+i <== 0
+h <== 0
+ENQUANTO h != y FAÇA:
+	h <== x*i
+	A[1+i] <== h
+	i <== i+1
+FIM_ENQUANTO
+ESCREVA(“A tabuada eh:  “, A)
+FIM_ALGORTIMO

@@ -1,0 +1,24 @@
+ALGORITMO
+DECLARE a,b,c NUMÉRICO
+ESCREVA "Digite três valores"
+LEIA a,b,c
+SE a==b==c or b==c or a==c or a==b
+ENTÃO ESCREVA "Nao é triangulo retangulo"
+SENÃO SE (b-c)< a < (b+c) and (a-c)<b<(a+c) and (a-b)<c<(a+b)
+ENTÃO
+	INÍCIO
+	SE a>=b>=c or a>=c>=b
+	ENTÃO
+        	SE a**2 == b**2 + c**2
+            	ENTÃO ESCREVA "eh triangulo retangulo"
+    	SENÃO SE b>=c>=a or b>=a>c
+        	SE b**2 == a**2+c**2
+	        ENTÃO ESCREVA "Eh triangulo retangulo."
+    	SENÃO SE c>=a>=b or c>=b>=a
+	        SE c**2 == a**2 + b**2
+            	ENTÃO ESCREVA "Eh um triangulo retangulo"
+    	SENÃO
+        ENTÃO ESCREVA "Nao e triangulo retangulo"
+SENÃO
+ENTÃO ESCREVA "Nao e triangulo"
+FIM_ALGORITMO

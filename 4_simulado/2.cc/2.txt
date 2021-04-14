@@ -1,0 +1,10 @@
+ALGORITMO
+DECLARE i,pd1,pd2,qd NUMÉRICO
+PARA CADA i<--1000 ATÉ 10000 FAÇA
+    	pd1<--int(i/100)
+    	pd2<--((i/100)-pd1)*100
+    	qd<--(pd1+pd2)**2
+	SE (i=qd)
+       	ENTÃO ESCREVA i
+FIM_PARA
+FIM_ALGORITMO

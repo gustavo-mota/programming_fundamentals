@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE 
+altura, pesoideal NUMÉRICO
+sexo LITERAL
+ESCREVA "Digite sua altura"
+LEIA altura
+ESCREVA "Digite seu gênero(H para homem, M para mulher)"
+LEIA sexo
+SE sexo = H
+ENTÃO
+	INÍCIO
+	pesoideal <== (72.7*altura)-58
+	ESCREVA "Seu peso ideal eh:", pesoideal
+	FIM
+SE sexo = M
+ENTÃO
+	INÍCIO
+	pesoideal <== (62.1*altura)-44.7
+	ESCREVA "Seu peso ideal é:", pesoideal
+	FIM
+SENÃO
+ESCREVA "Comando (caractere) inválido".
+FIM_ALGORITMO

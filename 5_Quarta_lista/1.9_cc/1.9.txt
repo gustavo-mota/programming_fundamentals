@@ -1,0 +1,16 @@
+ALGORITMO
+DECLARE s, b[100],i, l, j NUMÉRICO
+PARA i <-- 1 ATÉ 100 FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Digite:”	
+	LEIA var
+	b[i] <-- var
+FIM
+l <-- 99
+PARA j <-- 1 ATÉ 50 FAÇA PASSO 1
+INÍCIO
+	s <-- s + (b[j] – b[l])**3
+	l <-- l – 1
+FIM
+ESCREVA s
+FIM_ALGORITMO.

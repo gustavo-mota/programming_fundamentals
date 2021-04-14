@@ -1,0 +1,55 @@
+ALGORITMO
+DECLARE f, n1, n2, n3 NUMÉRICO
+LEIA f
+Se f >= 5 
+ENTÃO
+	INÍCIO
+	ESCREVA "ERROR.Digite valores válidos"
+	FIM
+SENÃO:
+	ESCREVA "Digite os valores"
+	LEIA n1, n2
+SE f = 1
+ENTÃO
+	INÍCIO
+	n3<== (n1+n20/2
+	ESCREVA "operação media:", n3
+	FIM
+SE f = 2
+ENTÃO
+	INÍCIO
+		SE n1>n2
+		ENTÃO
+		INÍCIO
+			n3<== n1-n2
+			ESCREVA "A subtração do maior pelo menor é:", n3
+		FIM
+		SE n1<n2
+		ENTÃO
+		INÍCIO
+			n3<== n2-n1
+			ESCREVA "A suubtração do maior pelo menor é:", n3
+		FIM
+		SENÃO
+		ESCREVA "Os dois são iguais: zero".
+	FIM
+SE f = 3
+ENTÃO
+	INÍCIO
+		n3 <== n1*n2
+		ESCREVA "O produto dos dois valores é:", n3
+	FIM
+SE f = 4
+ENTÃO
+	INÍCIO
+		SE n2 = 0
+		ENTÃO
+			INÍCIO
+			ESCREVA "O denominador não pode ser zero".
+			FIM
+		SENÃO
+		n3 <== n1/n2
+		ESCREVA "O resultado foi:", n3
+	FIM
+FIM_ALGORITMO
+		

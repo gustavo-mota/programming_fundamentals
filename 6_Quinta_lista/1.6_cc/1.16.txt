@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE matriz[4,4],i,j,s,r NUMÉRICO
+PARA i<--1 ATÉ 4 FAÇA
+INÍCIO
+	PARA j<--1 ATÉ 4 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+	FIM
+FIM
+PARA s<---1 ATÉ 4 FAÇA
+INÍCIO
+	PARA r<--1 ATÉ 4 FAÇA
+	INÍCIO
+		SE s!=r
+		ENTÃO ESCREVA matriz[s,r]
+	FIM
+FIM
+FIM_ALGORITMO

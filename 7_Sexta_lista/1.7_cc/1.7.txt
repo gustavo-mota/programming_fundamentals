@@ -1,0 +1,35 @@
+ALGORITMO
+DECLARE combinacoes[50063860],b NUMÉRICO
+combinar(combinacoes)
+PARA b<--1 ATÉ 50063860 FAÇA
+INÍCIO
+	ESCREVA combinacoes[b]
+FIM
+FIM_ALGORITMO
+SUB-ROTINA combinar(lista[50063860] NUMÉRICO)
+DECLARE indice,i,k,l,m,n NUMÉRICO
+PARA indice<--1 ATÉ 50063860 FAÇA
+INÍCIO
+
+	PARA i<--51 ATÉ 60 FAÇA
+	INÍCIO
+		PARA j<--41 ATÉ 50 FAÇA
+		INÍCIO
+			PARA k<--31 ATÉ 40 FAÇA
+			INÍCIO
+				PARA l<--21 ATÉ 30 FAÇA
+				INÍCIO
+					PARA m<--11 ATÉ 20 FAÇA
+					INÍCIO
+						PARA n<--1 ATÉ 10 FAÇA
+						INÍCIO
+							lista[indice] <--- i.j.k.l.m.n
+						FIM
+					FIM
+				FIM
+			FIM
+		FIM
+	FIM
+FIM
+RETORNE lista
+FIM_SUB-ROTINA combinar

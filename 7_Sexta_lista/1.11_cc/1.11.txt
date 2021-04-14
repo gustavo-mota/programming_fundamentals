@@ -1,0 +1,20 @@
+ALGORITMO
+DECLARE i, soma NUMÉRICO
+LEIA n
+DECLARE vetor[n] NUMÉRICO
+PARA i<-- 1 ATÉ n  FAÇA
+INÍCIO
+	LEIA vetor[i]
+FIM
+soma <--- somar(vetor)
+ESCREVA soma
+FIM_ALGORITMO
+SUB-ROTINA somar(vetor[n] NUMÉRICO)
+DECLARE somatorio,i NUMÉRICO
+somatorio <-- 0
+PARA i<-- 1 ATÉ n FAÇA
+INÍCIO
+	somatorio <-- somatorio + vetor[i]
+FIM
+RETORNE somatorio
+FIM_SUB-ROTINA

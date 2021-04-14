@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE matriz[4,4],x,y NUMÉRICO
+PARA i<--1 ATÉ 4 FAÇA
+INÍCIO
+	PARA j<--1 ATÉ 4 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+	FIM
+FIM
+x <-- 4
+y <-- 1
+PRA s<--1 ATÉ 4 FAÇA
+INÍCIO
+	ESCREVA matriz[x,y],end=" "
+	x <-- x - 1
+	y <-- y + 1
+FIM
+FIM_ALGORITMO

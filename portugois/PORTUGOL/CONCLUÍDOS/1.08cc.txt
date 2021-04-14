@@ -1,0 +1,11 @@
+ALGORITMO
+DECLARE erros, n NUMÉRICO
+erros<==1
+n<==1
+PARA i<==1 ATÉ 26 FAÇA:
+	INÍCIO
+	n<==n*2
+	erros<==erros+n
+	FIM
+ESCREVA erros
+FIM_ALGORITMO

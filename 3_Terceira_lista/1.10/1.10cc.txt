@@ -1,0 +1,22 @@
+ALGORITMO
+DECLARE somaZe, somaGal, somaGil, voto  NUMÉRICO
+somaZe <== 0
+somaGil <== 0
+somaGal <== 0
+voto<==1
+ENQUANTO (voto!=0) FAÇA
+INÍCIO
+	ESCREVA "digite o valor equivalente ao voto"
+	LEIA voto
+	SE (voto=1)
+	ENTÃO somaZe<==somaZe+1
+   	SENÃO SE (voto=2)
+        ENTÃO somaGal<==somaGal+1
+    	SENÃO SE (voto=3)
+        ENTÃO somaGil<==somaGil+1
+    	SENÃO SE (voto=0)
+      	ENTÃO ESCREVA 'Votação encerrada.'
+    	SENÃO ESCREVA 'Voto inválido'
+FIM
+ESCREVA "Resultado:" "Votos para Zé:", somaZe, "votos para Gal:", somaGal, "Votos para Gil:", somaGil
+FIM_ALGORITMO

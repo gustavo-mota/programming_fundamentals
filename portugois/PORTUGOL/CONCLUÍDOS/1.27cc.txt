@@ -1,0 +1,19 @@
+ALGORITMO
+DECLARE S,R,H,i,N NUMÉRICO
+S<==1
+R<==1
+H<==1
+ESCREVA "Digite quantos termos deseja elaborar para efetuar a soma"
+LEIA N
+i<==0
+N<==N-1
+ENQUANTO (i<N) FAÇA:
+	INÍCIO
+    	S<==S+1
+    	R<==(1/S)
+    	H<==H+R
+    	i<==i+1
+	FIM
+ESCREVA H
+
+FIM_ALGORITMO

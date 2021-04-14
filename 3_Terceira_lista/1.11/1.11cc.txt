@@ -1,0 +1,30 @@
+ALGORITMO
+DECLARE primeirovalor,somatório,segundovalor  NUMÉRICO
+ESCREVA "Digite o primeiro valor"
+LEIA primeirovalor
+ESCREVA "Digite o segundo valor"
+LEIA segundovalor
+
+SE (primeirovalor>segundovalor)
+ENTÃO ESCREVA "Erro. O primeiro valor deve ser menor que o segundo."
+
+SENÃO SE (primeirovalor=segundovalor)
+ENTÃO ESCREVA "Intervalo, somatório entre eles e os valor pares é zero."
+
+SENÃO	INÍCIO
+   	somatório<==0
+	primeirovalor<==primeirovalor+1
+	ENQUANTO (primeirovalor<segundovalor) FAÇA:
+	INÍCIO
+        	SE (primeirovalor MOD 2=0)
+		ENTÃO	INÍCIO	
+	        print(primeirovalor)
+            	somatório<==somatório+primeirovalor
+            	primeirovalor<==primeirovalor+1
+			FIM        
+		SENÃO primeirovalor<==primeirovalor+1
+	FIM
+    	ESCREVA "Esses são os valores pares no intervalo aberto definido pelos valores inseridos em ordem crescente."
+   	ESCREVA "E o somatório desses valores pares:", somatório
+	FIM
+FIM_ALGORITMO

@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE i,s,x, denominador NUMÉRICO
+i<==1
+s<==1
+x<==1
+denominador<==3
+ENQUANTO (i<=51) FAÇA:
+   SE i%2==0
+   	ENTÃO s<==s+(1/(denominador**3))
+   SENÃO:
+        s<==s-(1/(denominador**3))
+   i<==i+1
+   denominador<==denominador+2
+
+s<==(s*32)**1/3
+ESCREVA "Valor de pi e:", s
+
+FIM_ALGORITMO

@@ -1,0 +1,37 @@
+ALGORITMO
+DECLARE idade, peso NUMÉRICO
+ESCREVA "Digite a sua idade"
+LEIA idade
+ESCREVA "Digite seu peso"
+LEIA peso
+SE idade <= 20
+ENTÃO
+	INÍCIO
+    	SE peso<=60
+        ENTÃO ESCREVA "Grupo de risco 9."
+    	SE 60<peso<=90
+        ENTÃO ESCREVA "Grupo de risco 8."
+    	SE peso>90
+        ENTÃO ESCREVA "Grupo de risco 7."
+	FIM
+SE 20<idade<=50
+ENTÃO
+	INÍCIO
+	SE peso <= 60
+        ENTÃO ESCREVA "Grupo de risco 6."
+    	SE 60 < peso <= 90
+        ENTÃO ESCREVA "Grupo de risco 5."
+    	SE peso > 90
+        ENTÃO ESCREVA "Grupo de risco 4."
+	FIM
+SE idade>50
+ENTÃO
+	INÍCIO
+    	SE peso <= 60
+        ENTÃO ESCREVA "Grupo de risco 3."
+    	SE 60 < peso <= 90
+        ENTÃO ESCREVA "Grupo de risco 2."
+    	SE peso > 90
+        ENTÃO ESCREVA "Grupo de risco 1."
+	FIM
+FIM_ALGORITMO

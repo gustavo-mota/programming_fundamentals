@@ -1,0 +1,25 @@
+ALGORITMO
+DECLARE v[30],n, cont, n2 NUMÉRICO
+PARA i ATÉ 30 FAÇA PASSO 1
+INÍCIO
+	Leia v[i]
+FIM
+LEIA n
+DECLARE aluno[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	PARA j <-- 1 ATÉ 30 FAÇA PASSO 1
+	INÍCIO
+		LEIA n2
+		SE (n2=v[j-1])
+		ENTÃO cont <-- cont+1
+	FIM
+	aluno[i] <-- cont
+	cont <-- 0
+FIM
+ESCREVA “RESULTADOS”
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA “O ALUNO”, i, “ACERTOU”, aluno[i], “QUESTÕES”
+FIM
+FIM_ALGORITMO

@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE A, B, n, p NUMÉRICO
+ESCREVA "Valor A"
+LEIA A
+ESCREVA "Valor B"
+LEIA B
+n<==0
+p<==0
+SE B<0
+ENTÃO B<==B*-1
+ENQUANTO (n<B) FAÇA
+INÍCIO
+	p <== p+A
+	n <== n+1
+FIM
+ESCREVA p
+FIM_ALGORITMO

@@ -1,0 +1,67 @@
+ALGORITMO
+DECLARE matriz[3,3], i, j,soma_pri, produto, soma_sec, d,s,r,h,w,g,q NUMÉRICO
+PARA i <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	PARA j <-- 1 ATÉ 3 FAÇA PASSO 1
+	INÍCIO
+		LEIA matriz[i][j]
+	FIM
+FIM
+DECLARE matriz[3, 5] NUMÉRICO
+matriz = [
+[matriz[1][1],matriz[1][2],matriz[1][3],matriz[1][1],matriz[1][2]],
+[matriz[2][1],matriz[2][2],matriz[2][3],matriz[2][1],matriz[2][2]],
+[matriz[3][1],matriz[3][2],matriz[3][3],matriz[3][1],matriz[3][2]]
+]
+soma_pri <-- 0
+soma_sec <-- 0
+d <-- 1
+produto <-- 1
+PARA s <-- 1 ATÉ  3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[s][d]
+	d <-- d + 1
+FIM
+soma_pri <-- soma_pri + produto
+d <-- 2
+produto <-- 1
+PARA r <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[r][d]
+	d <-- d + 1
+FIM
+soma_pri <-- soma_pri + produto
+d <-- 3
+produto <-- 1
+PARA h <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[h][d]
+	d <-- d +1
+FIM
+soma_pri <-- soma_pri + produto
+d <-- 3
+produto <-- 1
+PARA w <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[w][d]
+	d <-- d - 1
+FIM
+soma_pri <-- soma_pri - produto
+d <-- 4
+produto <-- 1
+PARA g <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[g][d]
+	d <-- d - 1
+FIM
+soma_pri <-- soma_pri - produto
+d <-- 5
+produto <-- 1
+PARA q <-- 1 ATÉ 3 FAÇA PASSO 1
+INÍCIO
+	produto <-- produto * matriz[q][d]
+	d <-- d - 1
+FIM
+soma_pri <-- soma_pri - produto
+ESCREVA "Determinante:", soma_pri
+FIM_ALGORITMO

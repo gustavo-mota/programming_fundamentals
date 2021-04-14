@@ -1,0 +1,40 @@
+ALGORITMO
+DECLARE n,k,i,x,s,vezes, NUMÉRICO
+ESCREVA "Digite quantos termos deseja na lista"
+LEIA n
+DECLARE litsa[n],lista2[n] NUMÉRICO
+SE (n>20)
+ENTÃO ESCREVA "Error, o valor excede a quantidade mínima suportada."
+SENÃO	INÍCIO
+    	PARA CADA i<--1 ATÉ (n+1) FAÇA
+	INÍCIO
+		ESCREVA "Digite um valor para a sua lista"
+		LEIA x
+        	lista[i]<--x
+	FIM
+	ESCREVA "Digite um indice"
+	LEIA k
+    	SE (k>n-1)
+        ENTÃO ESCREVA "Error, o índice é superior ao número de elementos da lista."
+    	SENÃO	INÍCIO
+        	ESCREVA lista[k]
+        	PARA CADA i<--1 ATÉ n FAÇA
+        		lista2.append(min(lista))
+            		lista.remove(min(lista))
+		FIM_PARA
+        	ESCREVA lista2[k]
+        	PARA CADA i<--1 ATÉ n FAÇA
+		INÍCIO
+            		s<--0
+            		vezes<--0
+            		ENQUANTO s<n
+			INÍCIO
+                		SE (i=lista2[s])
+                     		ENTÃO vezes<--vezes+1
+                		s<--s+1
+			FIM
+            		ESCREVA "O número,",lista2[i],"repete",vezes,"vezes."
+		FIM
+		FIM
+	FIM
+FIM_ALGORITMO

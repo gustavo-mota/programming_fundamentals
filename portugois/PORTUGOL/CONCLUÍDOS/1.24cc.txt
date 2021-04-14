@@ -1,0 +1,29 @@
+ALGORITMO
+DECLARE valor1, valor2, valor3, contador, quantidade NUMÉRICO
+ESCREVA "Digite quantos termos deseja imprimir"
+LEIA quantidade
+ESCREVA "Digite o primeiro valor"
+LEIA valor1
+ESCREVA "Digite o segundo valor"
+LEIA valor2
+contador<==1
+valor3<==0
+ESCREVA valor1
+ESCREVA valor2
+ENQUANTO (contador<=quantidade) FAÇA
+INÍCIO
+	SE contador%2==0
+	ENTÃO	INÍCIO
+        	valor3<==valor2-valor1
+        	ESCREVA valor3
+		FIM
+
+	SENÃO	INÍCIO
+        	valor3<==valor1+valor2
+        	ESCREVA valor3
+		FIM
+    	valor1<==valor2
+    	valor2<==valor3
+    	contador<==contador+1
+FIM
+FIM_ALGORITMO

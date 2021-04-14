@@ -1,0 +1,26 @@
+ALGORITMO
+DECLARE	i,j,s,r,n NUMÉRICO
+	antisimétrica LÓGICO
+antisimétrica <-- VERDADEIRO
+LEIA n
+DECLARE matriz[n,n],oposta[n,n] NUMÉRICO
+PARA i<--1 ATÉ n FAÇA
+INÍCIO
+	PARA j<--1 ATÉ n FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		oposta[i,j] <-- matriz[i,j]*(-1)
+	FIM
+FIM
+PARA s<--1 ATÉ n FAÇA
+INÍCIO
+	PARA r<--1 ATÉ n FAÇA
+	INÍCIO
+		SE matriz[s,r]!=oposta[s,r]
+		ENTÃO antisimettrica <-- FALSO
+	FIM
+FIM
+SE antisimétrica=VERDADEIRO
+ENTÃO ESCREVA "É antisimétrica"
+SENÃO ESCREVA "Não é antisimétrica"
+FIM_ALGORITMO

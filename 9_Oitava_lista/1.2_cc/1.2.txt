@@ -1,0 +1,29 @@
+ALGORITMO
+DECLARE n,indice,soma_v,maior,i,media NUMÉRICO
+LEIA n
+DECLARE serviços[n]REGISTRO(
+	os,
+	data,
+	valor NUMÉRICO
+	descrição,
+	nome LITERAL)
+indice <-- 0
+soma_v <-- 0
+maior <-- 0
+PARA i<--10 ATÉ n FAÇA
+INÍCIO
+	LEIA serviços[i].os
+	LEIA serviços[i].data
+	LEIA serviços[i].descrição
+	LEIA serviços[i].valor
+	LEIA serviços[i].nome
+	soma_v <-- serviços[i].valor + soma_v
+	SE maior<serviços[i].valor
+	ENTÃO	INÍCIO
+		maior <-- serviço[i].valor
+		indice <-- i
+		FIM
+FIM
+media <-- soma_v / n
+ESCREVA media, serviço[indice].nome, serviço[indice].descrição, serivço[indice].data
+FIM_ALGORITMO

@@ -1,0 +1,21 @@
+ALGORITMO
+DECLARE a, fx NUMÉRICO
+ESCREVA "Digite o valor para cacular f(x)"
+LEIA a
+SE a <= 1
+ENTÃO ESCREVA "F(x) e:", 1
+SENÃO SE 1 < a <= 2
+ENTÃO ESCREVA "F(x) e:", 2
+SENÃO SE 2 < a <= 3
+ENTÃO
+	INÍCIO	
+	fx <== a**2
+	ESCREVA "F(x) e:", Fx
+	FIM
+SENÃO SE a>3
+ENTÃO
+	INÍCIO
+	Fx <== a**3
+	ESCREVA "F(x) e:", Fx
+	FIM
+FIM_ALGORITMO

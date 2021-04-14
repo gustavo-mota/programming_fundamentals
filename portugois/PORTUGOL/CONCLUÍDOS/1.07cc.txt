@@ -1,0 +1,15 @@
+ALGORITMO
+DECLARE aquiles, tartaruga, i NUMÉRICO
+aquiles<==0
+tartaruga<==100
+i<==0
+ENQUANTO (tartaruga>aquiles):
+	INÍCIO
+  	tartaruga <== tartaruga+1
+	aquiles <== aquiles+10
+	ESCREVA aquiles,tartaruga
+	i<==i+1
+	FIM
+ESCREVA "Tempos passados:", i
+
+FIM_ALGORITMO

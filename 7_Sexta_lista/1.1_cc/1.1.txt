@@ -1,0 +1,31 @@
+ALGORITMO
+DECLARE n,binario NUMÉRICO
+LEIA n
+binario <-- converter(n)
+ESCREVA binário
+FIM_ALGORITMO
+SUB-ROTINA converter(x NUMÉRICO)
+DECLARE
+t <-- x
+tamanho <-- 0
+ENQUANTO t!=0 FAÇA
+INÍCIO
+	t <-- t/2
+	tamanho <-- tamanho +1
+DECLARE lista[tamanho] NUMÉRICO
+i <--1
+ENQUANTO x!=0 FAÇA
+INÍCIO
+	y <-- x%2
+	x <-- x/2
+	lista[i]<-- y
+	i <-- i + 1
+FIM
+
+convertido <-- lista[tamanho]*10
+PARA b<--tamanho ATÉ 2 FAÇA PASSO -1
+INÍCIO
+	convertido<--(convertido*10) + lista[b]
+FIM
+RETORNE convertido
+FIM_SUB-ROTINA converter

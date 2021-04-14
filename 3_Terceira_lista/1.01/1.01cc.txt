@@ -1,0 +1,9 @@
+ALGORITMO
+
+DECLARE a, p NUMÉRICO
+PARA I<==1 ATÉ 21 FAÇA PASSO 1:
+	p<==2**a
+	a<==a+1
+	ESCREVA p
+
+FIM_ALGORITMO

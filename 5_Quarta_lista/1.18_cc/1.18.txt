@@ -1,0 +1,25 @@
+ALGORITMO
+DECLARE ponto_central[1], x, y, n, x_p, y_p, j, i, raio NUMÉRICO
+ESCREVA “Digite a coordenada x do ponto central:”
+LEIA x
+ESCREVA “Digite a coordenada y do ponto central:”
+LEIA y
+ponto_central <-- [x, y]
+ESCREVA “Digite o número de pontos:” 
+LEIA n
+DECLARE pontos[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Ponto”, i
+	ESCREVA “Digite a coordenada x do ponto:”
+	LEIA x_p
+	ESCREVA “Digite a coordenada y do ponto:”
+	LEIA y_p
+	pontos [i] <-- [x_p, y_p]
+FIM
+PARA j <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	raio <-- ((x-pontos[j][0])**2 + (y-pontos[j][1])**2)**(1/2)
+	ESCREVA “Raio”, raio
+FIM
+FIM_ALGORITMO

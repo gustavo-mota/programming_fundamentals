@@ -1,0 +1,37 @@
+ALGORITMO
+DECLARE valor, sexo, idade, apITA, apBRA, ap NUMÉRICO
+ESCREVA "digite o valor a ser calculado"
+LEIA valor
+ESCREVA "Digite o sexo"
+LEIA sexo
+ESCREVA "Digite a idade"
+LEIA idade
+SE (sexo!=1) E (sexo!=2)
+ENTÃO ESCREVA "Erro."
+SENÃO	INÍCIO
+	SE (idade<18)
+        ENTÃO ESCREVA "Erro."
+	SENÃO	INÍCIO
+        	apITA<--valor*0.04
+        	apBRA<--valor*0.06
+        	SE (idade<30)
+		ENTÃO 	INÍCIO
+            		ap<--(30-idade)/100
+            		apITA<--(apITA*ap)+apITA
+			FIM
+        	SENÃO SE (idade>50)
+		ENTÃO	INÍCIO
+            		ap<--(idade-50)/100
+            		SE (ap>0.15)
+            		ENTÃO ap<--0.15
+            		apITA<--apITA-(apITA*ap)
+			FIM
+        	SE (sexo=2)
+        	ENTÃO apBRA<--apBRA-(apITA*0.05)
+        	SE (idade>30)
+        	ENTÃO apBRA<--apBRA-(apBRA*0.10)
+        	ESCREVA "Seguro Bradesco:", apBRA
+        	ESCREVA "Seguro Itaú:", apITA
+		FIM
+	FIM
+FIM_ALGORITMO

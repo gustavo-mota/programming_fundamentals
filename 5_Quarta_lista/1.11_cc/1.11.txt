@@ -1,0 +1,25 @@
+ALGORITMO
+DECLARE n, i, var, k, p, l, variavel NUMÉRICO
+ESCREVA “Digite um valor para n:”
+LEIA n
+DECLARE a[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Digite um valor:”
+	LEIA var
+	a[i] <-- var
+FIM
+ESCREVA a
+PARA k <-- 1 ATÉ 10 FAÇA PASSO 1
+INÍCIO
+	p <-- 0 
+	ESCREVA “Digite um valor:”
+	LEIA variavel
+	z[k] <-- variavel
+	PARA l <-- n ATÉ 0 FAÇA PASSO -1
+	INÍCIO
+		p <-- p + a[l] * (z[k]**l)
+	FIM
+	ESCREVA "\nNúmero: ", z[k], "\nP =", p
+FIM
+FIM_ALGORITMO.

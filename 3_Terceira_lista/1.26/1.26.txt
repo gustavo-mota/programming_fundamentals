@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE	N,i,s,j NUMÉRICO
+	lista[1,4,4] LISTA 
+ESCREVA "Digite quantos termos deseja na lista"
+LEIA N
+i<==0
+s<==1
+j<==4
+N<==N-3
+H=3
+ENQUANTO (i<N) FAÇA
+INÍCIO
+    	s<==s+1
+    	j<==j+1
+    	lista[H]<==s
+    	lista[H+1]<==j
+    	lista[H+2]<==j
+    	i<==i+1
+	H<==H+1
+FIM
+N<==N+3
+ESCREVA lista[0:N]
+FIM_ALGORITMO

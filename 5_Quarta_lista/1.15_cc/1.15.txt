@@ -1,0 +1,21 @@
+ALGORITMO
+DECLARE aux, n, vari, desvio NUMÉRICO
+LEIA n
+DECLARE v[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	LEIA v[i]
+	media <-- media+v[i]
+FIM
+media <-- media/n
+PARA i <-- 1 ATÉ n FAÇA PASSO1
+INÍCIO
+	aux <-- (v[i]-media)^2
+	vari <-- vari+aux
+FIM
+vari <-- vari/(n-1)
+desvio <-- vari**(1/2)
+ESCREVA “MEDIA=”, media
+ESCREVA “VARIANCIA=”, vari
+ESCREVA “DESVIO=”, desvio
+FIM_ALGORITMO

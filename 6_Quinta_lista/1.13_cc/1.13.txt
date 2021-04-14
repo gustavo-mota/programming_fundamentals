@@ -1,0 +1,29 @@
+ALGORITMO
+DECLARE n, s,r,i,j NUMÉRICO
+	simetrico LÓGICO
+LEIA n
+DECLARE A[n,n], matrix[n,n] NUMÉRICO
+SE n>10 OU n<0
+ENTÃO ESCREVA "ERROR"
+SENÃO	INÍCIO
+	PARA i <-- 1 ATÉ n FAÇA
+	INÍCIO
+		PARA j <-- 1 ATÉ n FAÇA
+		INÍCIO
+			LEIA A[i,j]
+			matrix[j,i] <-- A[i,j]
+		FIM
+	FIM
+	PARA s <-- 1 ATÉ n FAÇA
+	INÍCIO
+		PARA  r <--- 1 ATÉ n FAÇA
+		INÍCIO
+			SE matrix[s,r] != A[s,r]
+			ENTÃO simetrico <-- FALSO
+		FIM
+	FIM
+	SE simetrico = VERDADEIRO
+	ENTÃO ESCREVA "É simétrica"
+	SENÃO ESCREVA "Não é simétrica"
+	FIM
+FIM_ALGORITMO

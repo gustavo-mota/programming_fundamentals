@@ -1,0 +1,47 @@
+ALGORITMO
+DECLARE valor,c_fato,fatn,d,x,s,y,fatd,fat NUMÉRICO
+ESCREVA "digite um valor"
+LEIA valor
+c_fato<==1
+fatn<==1
+c_global<==1
+d<==1
+x<==2
+s<==1
+y<==1
+fatd<==1
+fat<==1
+
+ENQUANTO (c_fato<=valor) FAÇA
+INÍCIO
+	fatn<==fatn*c_fato
+    	c_fato<==c_fato+1
+FIM
+
+ENQUANTO (c_global<=valor) FAÇA
+INÍCIO
+	valor<==valor-d
+
+    	ENQUANTO (s<=valor)
+	INÍCIO
+        	fat<==fat*s
+        	s<==s+1
+	FIM
+        
+	ENQUANTO (y<=x)
+	INÍCIO
+        	fatd<==fatd*y
+        	y<==y+1
+	FIM
+
+    	SE (c_global%2=0)
+        ENTÃO fatn<==fatn+(fat/fatd)
+    	SENÃO fatn<==fatn-(fat/fatd)
+
+    	c_global<==c_global+1
+    	x<==x+2
+    	d<==d+1
+FIM
+ESCREVA fatn
+
+FIM_ALGORITMO

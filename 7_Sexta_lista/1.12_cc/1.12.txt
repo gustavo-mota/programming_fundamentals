@@ -1,0 +1,21 @@
+ALGORITMO
+DECLARE i, soma NUMÉRICO
+LEIA n
+DECLARE vetor[n] NUMÉRICO
+PARA i<-- 1 ATÉ n  FAÇA
+INÍCIO
+	LEIA vetor[i]
+FIM
+maior_termo <--- maior(vetor)
+ESCREVA maior_termo
+FIM_ALGORITMO
+SUB-ROTINA maior(vetor[n] NUMÉRICO)
+DECLARE maior,i NUMÉRICO
+maior <-- vetor[1]
+PARA i<--2 ATÉ n FAÇA
+INÍCIO
+	SE maior<vetor[n]
+	ENTÃO maior <-- vetor[n]
+FIM
+RETORNE maior
+FIM_SUB-ROTINA

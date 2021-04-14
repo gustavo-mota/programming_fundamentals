@@ -1,0 +1,30 @@
+ALGORITMO 
+DECLARE saldomedio, credito NUMÉRICO
+ESCREVA "Digite o saldo medio do ano anterior de determinado cliente"
+LEIA saldomedio
+SE saldomedio <= 200
+ENTÃO
+	INÍCIO
+	credito <=== saldomedio*0.1
+	ESCREVA "Credito =", credito
+	FIM
+SE 200<saldomedio<=300
+ENTÃO
+	INÍCIO
+	credito = saldomedio * 0.2
+	ESCREVA "Credito =", credito
+	FIM
+SE 300<saldomedio<=400
+ENTÃO
+	INÍCIO
+	credito <== saldomedio * 0.25
+	ESCREVA "Credito =", credito
+	FIM
+SE 400<saldomedio
+ENTÃO
+	INÍCIO
+	credito <== saldomedio * 0.3
+	ESCREVA "Credito =", credito
+	FIM
+ESCREVA "Seu saldo anterior era:", saldomedio
+FIM_ALGORITMO

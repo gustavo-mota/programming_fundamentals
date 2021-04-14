@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE matriz[4,4], i, j, vetor[2] NUMÉRICO
+H <-- 1
+PARA i<--1 ATÉ 4 FAÇA
+INÍCIO
+	PARA j<--1 ATÉ 4 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		SE i = j
+		ENTÃO	INÍCIO
+			vetor[H]<--matriz[i,j]
+			H<-- H+1
+			FIM
+	FIM
+FIM
+ESCREVA "Diagonal principal: (", vetor[1],",", vetor[2],",",vetor[3],",",vetor[4], ")"
+FIM_ALGORITMO

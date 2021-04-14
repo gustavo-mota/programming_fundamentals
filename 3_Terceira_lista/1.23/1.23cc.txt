@@ -1,0 +1,20 @@
+ALGORITMO
+DECLARE valor1, valor2, valor3, n, contador NUMÉRICO
+ESCREVA "Digite quantos termos deseja"
+LEIA n
+ESCREVA "Digite o primeiro valor"
+LEIA valor1
+ESCREVA "Digite o segundo valor"
+LEIA valor2
+ESCREVA valor1
+ESCREVA valor2
+contador<==1
+ENQUANTO (contador<=n) FAÇA
+INÍCIO
+    	valor3<==valor1+valor2
+    	ESCREVA valor3
+    	valor1<==valor2
+    	valor2<==valor3
+    	contador<==contador+1
+FIM
+FIM_ALGORITMO

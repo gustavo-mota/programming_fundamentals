@@ -1,0 +1,33 @@
+ALGORITMO
+DECLARE	cos,cont,nfat, ang NUMÉRICO
+	soma = FALSO LÓGICO
+ESCREVA "Digite um angulo"
+LEIA ang
+cos<==1
+cont<==1
+ang<==ang/(180/3.14)
+FUNÇÃO fatorial(num)
+	nfat<==1
+	ENQUANTO (num>1) FAÇA
+	INÍCIO
+		nfat<==nfat*num
+		num<==num-1
+	FIM
+	return nfat
+ENQUANTO (cont<=14) FAÇA
+INÍCIO
+	SE (soma=True)
+	ENTÃO	INÍCIO
+		cos+=(ang**(cont*2))/fatorial(cont*2)
+		soma=False
+		FIM
+
+	SENÃO	INÍCIO
+		cos-=(ang**(cont*2))/fatorial(cont*2)
+		soma=True
+		FIM
+	cont<==cont+1
+FIM
+ESCREVA cos
+
+FIM_ALGORITMO

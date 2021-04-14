@@ -1,0 +1,8 @@
+ALGORTIMO
+DECLARE l1, l2, area, potencia NUMÉRICO
+ESCREVA(“Digite as dimensões: “)
+LEIA l1, l2
+area <== l1*l2
+potencia <== area*18
+ESCREVA(“A potencia necessária eh:”, potencia)
+FIM_ALGORITMO

@@ -1,0 +1,20 @@
+ALGORITMO
+DECLARE i,j,H,soma,matriz[3,3],vetor[3],s NUMÉRICO
+H <-- 1
+soma <-- 0
+PARA i <-- 1 ATÉ 3 FAÇA
+INÍCIO
+	PARA j <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		soma <-- soma + matriz[i,j]
+	FIM
+	vetor[H] <-- soma
+	soma <-- 0
+	H <-- H + 1
+FIM
+PARA s <-- 1 ATÉ 3 FAÇA
+INÍCIO
+	ESCREVA vetor[s], end=" "
+FIM
+FIM_ALGORITMO

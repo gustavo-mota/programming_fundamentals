@@ -1,0 +1,45 @@
+ALGORITMO
+DECLARE	regstroA[5]REGISTRO(
+	código,
+	salario NUMÉRICO
+	nome LITERAL)
+	registroB[4]REGISTRO(
+	código NUMÉRICO
+	nome LITERAL)
+	registroC[10]REGISTRO(
+	código,
+	códigoE,
+	códigoEs,
+	ano NUMÉRICO
+	descrição LITERAL)
+	i,s,r,j,código NUMÉRICO
+PARA i<--1 ATÉ 5 FAÇA
+INÍCIO
+	LEIA registroA[i].código
+	LEIA registroA[i].nome
+	LEIA registroA[i].salario
+FIM
+PARA s<--1 ATÉ 4 FAÇA
+INÍCIO
+	LEIA registroB[s].código
+	LEIA registroB[s].nome
+FIM
+PARA r<--1 ATÉ 10 FAÇA
+INÍCIO
+	LEIA registroC[r].código
+	LEIA registroC[r].descrição
+	LEIA registroC[r].códigoE
+	LEIA registroC[i].códigoEs
+	LEIA registroC[i].ano
+LEIA código
+PARA j<--1 ATÉ 10 FAÇA
+INÍCIO
+	SE registroC[j].codigoEs = código
+	ENTÃO ESCREVA registroC[j]
+	PARA q<--1 ATÉ 5 FAÇA
+	INÍCIO
+		SE registroA[q].código = registroC[j].códigoE
+		ENTÃO ESCREVA registroA[q]
+	FIM
+FIM
+FIM_ALGORITMO

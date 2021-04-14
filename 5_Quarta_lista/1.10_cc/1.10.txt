@@ -1,0 +1,19 @@
+ALGORITMO
+DECLARE merc[100], faturamento, var1, var2, i, j NUMÉRICO
+faturamento <-- 0
+PARA i <-- 1 ATÉ 100 FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Mercadoria”, i, “:”
+	ESCREVA “Digite a quantidade vendida:”
+	LEIA var1
+	ESCREVA “Digite o preço:”
+	LEIA var2
+	merc[i] <-- [var1,var2]
+	faturamento <-- faturamento + var1 * var2
+FIM
+PARA j <-- 1 ATÉ 100 FAÇA PASSO 1
+INÍCIO
+	ESCREVA "Mercadoria:",j ,"Venda(s) e Preço da unidade(respectivamente):",merc[j]"."
+FIM
+ESCREVA "Faturamento:R$", faturamento
+FIM_ALGORITMO.

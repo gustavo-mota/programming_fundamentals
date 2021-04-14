@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE a,b,c NUMÉRICO
+ESCREVA "Digite três valores"
+LEIA a,b,c
+SE (b-c)< a < (b+c) and (a-c)<b<(a+c) and (a-b)<c<(a+b)
+ENTÃO
+	INÍCIO
+	SE a**2>b**2+c**2 or b**2>a**2+c**2 or c**2>b**2+a**2
+	ENTÃO ESCREVA"Obtuso"
+	SENÃO SE a**2<b**2+c**2 or b**2<a**2+c**2 or c**2<b**2+a**2
+	ENTÃO ESCREVA "Acutângulo"
+    	SENÃO
+       	ENTÃO ESCREVA "Triângulo retângulo"
+	FIM
+SENÃO
+ENTÃO ESCREVA "Nao e o caso de os valores digitados pertencerem aos lados de um triangulo."
+FIM_ALGORITMO

@@ -1,0 +1,43 @@
+ALGORITMO
+DECLARE nAlunos, nota, nProvas, soma, soma2, valor, soma1,i ,j NUMÉRICO
+DECLARE nome LITERAL
+ESCREVA "Digite a quantidade de alunos: "
+LEIA nAlunos
+ESCREVA "Digite a quantidade de provas: "
+Leia nProvas
+soma <-- 0
+soma1 <-- 0
+DECLARE vetPeso[nProvas], vetNota[nProvas], vetAlNt[nAlunos] NUMÉRICO
+PARA i <-- 1 ATÉ nProvas FAÇA PASSO 1
+INÍCIO
+	ESCREVA "Digite o peso da ", i, "º prova:”
+	LEIA valor
+	vetPeso[i] <-- valor
+	soma2 <-- soma2 + vetPeso[i]
+FIM
+PARA i <-- 1 ATÉ nAlunos FAÇA PASSO 1
+INÍCIO
+	ESCREVA "Digite o ", i, "º nome: "
+	LEIA nome
+	PARA j <-- 1 ATÉ nProvas FAÇA PASSO 1
+	INÍCIO
+		ESCREVA "Digite a ", j+1, "º nota do ", nome, ": "
+		LEIA nota
+		vetNota[j] <-- nota
+		soma <-- nota * vetPeso[i]		
+	FIM
+	vetAlNt[i] <-- vetNota
+	vetNota <-- [ ]
+	ESCREVA "Media ponderada do aluno: ", nome, " é: ", soma/soma2
+	soma <-- 0
+FIM
+PARA i <-- 1 ATÉ nProvas FAÇA PASSO 1
+INÍCIO
+	PARA j <-- 1 ATÉ nAlunos FAÇA PASSO 1
+	INÍCIO	
+		soma <-- vetAlNt[j][i]
+	FIM
+	ESCREVA "A media aritmética da ", i, "º prova é: ", soma1/nAlunos	
+	soma1 <-- 0 
+FIM
+FIM_ALGORITMO

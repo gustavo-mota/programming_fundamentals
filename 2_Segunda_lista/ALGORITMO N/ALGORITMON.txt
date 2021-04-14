@@ -1,0 +1,17 @@
+ALGORITMO
+DECLARE a,b,c NUMÉRICO
+ESCREVA "Digite o valor a, b, c"
+LEIA a, b , c
+SE (b-c)< a < (b+c) e (a-c)<b<(a+c) e (a-b)<c<(a+b)
+ENTÃO
+	INÍCIO
+	SE a==b==c:
+        ENTÃO ESCREVA "Triangulo equilatero"
+    	SENÃO SEea==b!=c or b==c!=a or a==c!=b
+        ENTÃO ESCREVA "Triangulo isosceles"
+    	SENÃO
+        ESCREVA "Triangulo escaleno."
+	FIM
+SENÃO
+ESCREVA "nao e um triangulo."
+FIM_ALGORITMO

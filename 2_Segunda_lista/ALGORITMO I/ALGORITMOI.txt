@@ -1,0 +1,11 @@
+ALGORITMO
+DECLARE a,b,c, delta, raiz1, raiz2 NUMÉRICO
+ESCREVA "Calcular raizes de equacoes de segundo grau"
+ESCREVA "Digite o valor de A,B,C"
+LEIA a,b,c
+delta <== b**2-4*a*c
+delta <== delta**1/2
+raiz2 <== (b-delta)/2*a
+raiz1 <== (b+delta)/2*a
+ESCREVA "As raizes sao:", raiz1, raiz2
+FIM_ALGORITMO

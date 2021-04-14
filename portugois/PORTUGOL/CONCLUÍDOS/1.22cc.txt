@@ -1,0 +1,19 @@
+ALGORITMO
+DECLARE p, s, contador, j, inteirodigitado NUMÉRICO
+p<==1
+s<==1
+contador<==2
+j<==0
+ESCREVA "digite um inteiro'
+LEIA inteirodigitado
+ESCREVA p
+ESCREVA s
+ENQUANTO (contador<n) FAÇA:
+	INÍCIO
+    	j<==p+s
+    	p<==s
+    	s<==j
+    	ESCREVA s
+    	contador<==contador+1
+	FIM
+FIM_ALGORITMO

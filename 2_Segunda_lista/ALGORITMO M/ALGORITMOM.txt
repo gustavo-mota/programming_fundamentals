@@ -1,0 +1,9 @@
+ALGORITMO
+DECLARE a, b, c NUMÉRICO
+ESCREVA "Digite três valores"
+LEIA a,b,c
+SE (b-c)< a < (b+c) and (a-c)<b<(a+c) and (a-b)<c<(a+b)
+ENTÃO ESCREVA "Os valores digitados podem pertencer a um triangulo."
+SENÃO
+ESCREVA "Nao e o caso de os valores digitados pertencerem aos lados d eum triangulo."
+FIM_ALGORITMO

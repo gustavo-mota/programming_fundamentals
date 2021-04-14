@@ -1,0 +1,37 @@
+ALGORITMO
+DECLARE n, maior, i, j, soma, num, l, primeiro_termo, ultimo_termo, indice_seq NUMÉRICO
+ESCREVA “Digite o número de termos:”
+LEIA n
+DECLARE termos[n], sequencia[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA “Adicione um termo:”
+	LEIA num
+	termos[n] <-- num
+
+FIM
+maior <-- termos[1] + termos[2]
+PARA j <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	soma <-- termos[j]
+	PARA l <-- j+1 ATÉ n FAÇA PASSO 1
+	INÍCIO
+		soma <-- soma + termos[l]
+		SE (soma > maior)
+		ENTÃO	INÍCIO
+			maior <-- soma
+			primeiro_termo <-- j
+			ultimo_termo <-- l			
+			FIM
+	 FIM
+
+FIM
+indice_seq <-- 0
+PARA n <-- primeiro_termo ATÉ ultimo_termo FAÇA PASSO 1	
+INÍCIO
+	indice_seq <-- indice_seq + 1
+	sequencia [índice_seq] <-- termos[n]
+FIM	
+ESCREVA "\nSegmento de soma máxima:", sequencia
+ESCREVA "Valor da soma:", maior
+FIM_ALGORITMO

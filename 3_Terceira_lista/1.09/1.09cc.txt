@@ -1,0 +1,29 @@
+ALGORITMO
+DECLARE alunos, r, i, soma, nota, maiornota, segundamaior NUMÉRICO
+ESCREVA "Digite quantos alunos existem na classe"
+LEIA alunos
+r<==0
+i<==1
+soma<==0
+ENQUANTO (i<=alunos) FAÇA
+INÍCIO
+    	ESCREVA "digite a nota"
+	LEIA nota
+    	SE r<nota
+	ENTÃO	INÍCO
+        	maiornota<==nota
+        	segundamaior<==r
+        	r<==nota
+        	soma<==soma+nota
+		FIM
+
+    	SENÃO	INÍCIO
+        	maiornota<==r
+        	segundamaior<==nota
+        	soma<==soma+r
+		FIM
+    	i<==i+1
+FIM
+media<==soma/alunos
+ESCREVA "Maior nota: ", maiornota, ".Segunda maior ", segundamaior, ".Media: ", media
+FIM_ALGORITMO

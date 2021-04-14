@@ -1,0 +1,49 @@
+ALGORITMO
+DECLARE matriz[10,4], i, j, curso, qnt_alunas, maior_cr,s,r,h NUMÉRICO
+PARA i <-- 1 ATÉ 10 FAÇA
+INÍCIO
+	ESCREVA "Aluno",i
+	PARA j <-- 1 ATÉ 4 FAÇA	
+	INÍCIO
+		SE j = 1
+		ENTÃO ESCREVA "Matrícula:”
+		SENÃO SE j = 2
+		ENTÃO ESCREVA "Sexo:"
+		SENÃO SE j = 3
+		ENTÃO ESCREVA "Código do curso:"
+		SENÃO SE j = 4
+		ENTÃO ESCREVA "CR:"
+		LEIA matriz[i][j]
+	FIM
+FIM
+PARA s <-- 1 ATÉ 10 FAÇA
+INÍCIO
+	PARA r<--1 ATÉ 4 FAÇA
+	INÍCIO
+		ESCREVA matriz[s,r]
+	FIM
+FIM
+ESCREVA "Digite o código do curso:"
+LEIA curso
+PARA h <-- 1 ATÉ 10 FAÇA
+INÍCIO
+	SE matriz[h][2] = 0 E matriz[h][3]=curso
+	ENTÃO alunas <-- [matriz[h][1],matriz[h][4]]
+FIM
+qnt_alunas <-- alunas
+SE qnt_alunas>0
+ENTÃO	INÍCIO	
+	maior_cr <-- alunas[1][2]
+	PARA i <-- 1 ATÉ qnt_alunas FAÇA
+	INÍCIO	
+		SE alunas[i][2] > maior_cr
+		ENTÃO maior_cr <-- alunas[i][2]
+	FIM	
+	PARA  i <-- 1 ATÉ qnt_alunas FAÇA
+	INÍCIO	
+		SE alunas[i][2] = maior_cr
+		ENTÃO ESCREVA "Premiada:", alunas[i][1]		
+	FIM
+	FIM
+SENÃO ESCREVA "\nNão há uma aluna premiada."
+FIM_ALGORITMO

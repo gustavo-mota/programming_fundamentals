@@ -1,0 +1,20 @@
+ALGORITMO
+DECLARE lista[50],a,i,s,r,z NUMÉRIC0
+i<--1
+a<--2
+r<--3
+lista[i]<--1
+lista[a]<--1
+ENQUANTO (a<=48)
+INÍCIO
+    	s<--lista[i]+lista[a]
+    	lista[r]<--s
+    	i<--i+1
+    	a<--a+1
+	r<--r+1
+FIM
+PARA CADA z<--1 ATÉ 50 FAÇA
+INÍCIO
+	ESCREVA lista[z]
+FIM
+FIM_ALGORITMO

@@ -1,0 +1,29 @@
+ALGORITMO
+DECLARE x,elevado,denominador,seno,contador,fat NUMÉRICO
+ESCREVA "digite um valor em graus para achar o seno"
+LEIA x
+elevado<==3
+denominador<==3
+seno<==x
+contador<==1
+fat<==1
+ENQUANTO (contador<==15) FAÇA:
+	INÍCIO
+   	i<==denominador
+   	ENQUANTO (i>=1) FAÇA:
+		INÍCIO
+   	    	fat<=fat*i
+   	    	i<==i-1
+		FIM
+   	SE contador%2==0
+       	ENTÃO seno<==seno+(x**elevado)/(fat)
+   	SENÃO
+       	ENTÃO seno<==seno-(x**elevado)/(fat)
+
+	contador<==contador+1
+   	elevado<==elevado+2
+   	denominador<==denominador+2
+	FIM
+ESCREVA seno
+
+FIM_ALGORITMO

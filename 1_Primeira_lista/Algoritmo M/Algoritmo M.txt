@@ -1,0 +1,9 @@
+ALGORITMO
+DECLARE x, dolar, alemao, libra NUMÉRICO
+ESCREVA(“Digite o valor que possui em reais: “ )
+LEIA x
+dolar <==  x/3.95
+alemao <== x/4.25
+libra <== x/5.80
+ESCREVA(“Os valores que possuirah em cada pais eh:” “Dolar:”, dolar, “Marco Alemao:”, alemao, “Libra Esterlina:” libra)
+FIM_ALGORITMO

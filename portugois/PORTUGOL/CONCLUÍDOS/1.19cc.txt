@@ -1,0 +1,14 @@
+ALGORITMO
+DECLARE n,contador,r NUMÉRICO
+ESCREVA "digite um valor"
+LEIA n
+contador<==1
+r<==1
+ENQUANTO (contador<=n) FAÇA
+INÍCIO
+	SE n%r==0
+	ENTÃO ESCREVA r
+    	r<==r+1
+    	contador<==contador+1
+FIM
+FIM_ALGORITMO

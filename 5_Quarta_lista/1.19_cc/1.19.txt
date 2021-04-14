@@ -1,0 +1,33 @@
+ALGORITMO
+DECLARE n, i, k, l, num, indice_seq, indi_ NUMÉRICO
+ESCREVA “Digite o número de termos:”
+LEIA n
+DECLARE termos[n], sequencia[n], indices[n] NUMÉRICO
+PARA i <-- 1 ATÉ n FAÇA PASSO 1	
+INÍCIO
+	ESCREVA “Adicione um número:”
+	LEIA num
+	termos[i] <-- num
+FIM
+ESCREVA termos
+indice_seq <-- 0
+indi_ <-- 0
+PARA k <-- 1 ATÉ n FAÇA PASSO 1	
+INÍCIO
+	PARA l <-- k ATÉ n FAÇA PASSO 1
+	INÍCIO
+		SE (k!=l E termos[k]=termos[l])
+		ENTÃO	INÍCIO
+			indice_seq <-- indice_seq + 1
+			sequencia[indice_seq] <-- termos[k]	
+			indi_ <-- indi_ + 1
+			índices[indi_] <--- k
+			indi_ <-- indi_ + 1
+			indices[indi_] <-- l
+			FIM
+
+	FIM
+FIM
+ESCREVA "i:",indices[0]+1
+ESCREVA "m:",indices[1]-indices[0]
+FIM_ALGORITMO

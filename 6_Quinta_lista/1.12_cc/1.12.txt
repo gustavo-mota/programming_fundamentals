@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE n,i,j,s,r NUMÉRICO
+LEIA n
+DECLARE matriz[n,n], transposta[n,n] NUMÉRICO
+SE n<0 OU n>10
+ENTÃO ESCREVA "ERROR"
+PARA i<--1 ATÉ n FAÇA
+INÍCIO
+	PARA j<--1 ATÉ n FAÇA
+	INÍCIO
+		LEIA matriz[n,n]
+		transposta[j,i]<--matriz[i,j]
+	FIM
+FIM
+PARA s<--1 ATÉ n FAÇA
+INÍCIO
+	PARA r<--1 ATÉ n FAÇA
+	INÍCIO
+		ESCREVA transposta[s,r], end=" "
+	FIM
+	ESCREVA "\n"
+FIM
+FIM_ALGORITMO

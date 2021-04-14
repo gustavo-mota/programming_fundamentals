@@ -1,0 +1,15 @@
+ALGORTIMO
+DECLARE anoatual, anonascimento, idade, idadedias, idademeses, idadesemanas, x, y NUMÉRICO
+ESCREVA(“Digite o ano atual: “)
+LEIA anoatual
+ESCREVA(“Digite o ano de nascimento: “)
+LEIA anonascimento
+Idade <== anoatual - anonascimento
+X <== (idade/4) + 1
+Y <== x/7
+Idadedias <== idade*365+x
+Idademeses <== idade*12
+Idadesemanas <== idade*52+y
+ESCREVA(“A idade em anos, meses, semanas, dias eh respectivamente: “)
+ESCREVA(idade, idademeses, idadesemanas, idadedias)
+FIM_ALGORTIMO

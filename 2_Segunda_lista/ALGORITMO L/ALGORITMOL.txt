@@ -1,0 +1,13 @@
+ALGORITMO
+DECLARE n1, n2, r NUMÉRICO
+ESCREVA "Programa que testa se determinado numero e ou nao divisivel por um segundo numero"
+ESCREVA "Digite o primeiro valor"
+LEIA n1
+ESCREVA "Digite o segundo valor"
+LEIA n2
+r <== n1%n2
+SE r ==0
+ENTÃO ESCREVA "E divisivel"
+SENÃO
+ESCREVA "Nao e divisivel"
+FIM_ALGORITMO

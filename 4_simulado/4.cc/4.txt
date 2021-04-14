@@ -1,0 +1,22 @@
+ALGORITMO
+DECLARE num,ap,i NUMÉRICO
+	triangulo FALSO LÓGICO
+i=1
+ESCREVA "Digite o valor"
+LEIA num
+SE (num<=5)
+ENTÃO ESCREVA "Não."
+SENÃO	INÍCIO
+    	ENQUANTO (i<num)
+	INÍCIO
+        	ap<--i*(i+1)*(i+2)
+        	SE (ap=num)
+        	ENTÃO triangulo<--VERDADEIRO
+        	i<--i+1
+	FIM
+    	SE triangulo=FALSO
+        ENTÃO ESCREVA "Não."
+    	SENÃO SE triangulo=VERDADEIRO
+        ENTÃO ESCREVA "Sim."
+	FIM
+FIM_ALGORITMO

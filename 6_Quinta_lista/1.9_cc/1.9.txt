@@ -1,0 +1,27 @@
+ALGORITMO
+DECLARE matrizA[3,2],matrizB[2,5],matrizC[3,5],ij,s,r,h,d,n NUMÉRICO
+PARA i<-- 1 ATÉ 3 FAÇA
+INÍCIO
+	PARA j<-- ATÉ 2 FAÇA
+	INÍCIO
+		LEIA matrizA[i,j]
+	FIM
+FIM
+PARA s<--1 ATÉ 2 FAÇA
+INÍCIO
+	PARA r<--1 ATÉ 5 FAÇA
+	INÍCIO
+		LEIA matrizB[s,r]
+	FIM
+FIM
+PARA h<--1 ATÉ 3 FAÇA
+INÍCIO
+	PARA d<--1 ATÉ 5 FAÇA
+	INÍCIO
+		n <-- matrizA[h,1]*matrizB[1,d] + matrizA[h,2]*matrizB[2,d]
+		matrizC[h,d] <-- n
+		ESCREVA matrizC[h,d], end=" "
+	FIM
+	ESCREVA "\n"
+FIM
+FIM_ALGORITMO

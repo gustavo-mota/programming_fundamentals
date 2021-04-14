@@ -1,0 +1,24 @@
+ALGORITMO
+DECLARE soma,fat,i,cont,den NUMÉRICO
+soma<--0
+cont<--1
+den<--1
+ENQUANTO (cont<=20) FAÇA
+INÍCIO
+    	i<--1
+    	fat<--1
+	ENQUANTO (i<=cont) FAÇA
+	INÍCIO
+        	fat<--fat*i
+        	i<--i+1
+	FIM
+    	SE (cont MOD 2=0)
+        ENTÃO soma<--soma-fat/den
+    	SENÃO	INÍCIO
+        	soma<--soma+fat/den
+		den<--(den*2)+1
+		FIM
+   	cont<--cont+1
+FIM
+ESCREVA soma
+FIM_ALGORITMO

@@ -1,0 +1,7 @@
+ALGORTIMO
+DELCARE lado, area NUMÉRICO
+ESCREVA(“Digite o valor do lado do quadrado: “)
+LEIA lado
+area <== lado*lado
+ESCREVA(“a area do quadrdo eh: “, area)
+FIM_ALGORTIMO

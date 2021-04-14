@@ -1,0 +1,26 @@
+ALGORITMO
+DECLARE x,i,j,s,fat,somatorio NUMÉRICO
+ESCREVA 'Digite um valor'
+LEIA x
+somatorio<==x
+i<==1
+j<==1
+fat<==1
+ENQUANTO (i<20) FAÇA
+INÍCIO
+    	s<==j
+    	ENQUANTO (j >= 1) FAÇA
+	INÍCIO
+        	fat <== fat * j
+        	j <== j - 1
+	FIM
+    	x<==x/fat
+    	SE i%2==0
+	ENTÃO somatorio<==somatorio+x
+    	SENÃO somatorio<==somatorio-x
+    	i=i+1
+    	j=s+1
+FIM
+ESCREVA somatorio
+
+FIM_ALGORITMO

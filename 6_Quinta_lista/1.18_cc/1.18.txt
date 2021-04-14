@@ -1,0 +1,24 @@
+ALGORITMO
+DECLARE matriz[3,3],matrix[3,3],i,j,s,r NUMÉRICO
+PARA i <-- 1 ATÉ 3 FAÇA
+INÍCIO
+	PARA j <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		LEIA matriz[i,j]
+		SE j=1
+		ENTÃO matrix[j+2, i] <-- matriz[i,j]
+		SENÃO SE j=2
+		ENTÃO matrix[j,i] <-- matriz[i,j]
+		SENÃO SE j=3
+		ENTÃO matrix[j-2,i] <-- matriz[i,j]
+	FIM
+FIM
+PARA s <-- 1 ATÉ 3 FAÇA
+INÍCIO
+	PARA r <-- 1 ATÉ 3 FAÇA
+	INÍCIO
+		ESCREVA matriX[s,r], end=" "
+	FIM
+	ESCREVA "\n"
+FIM
+FIM_ALGORITMO

@@ -1,0 +1,51 @@
+ALGORITMO
+DECLARE n, num, c, p, i, in, anterior, repete, repetidos NUMÉRICO
+ESCREVA "Digite o número de termos: "
+LEIA n
+DECLARE x[n] NUMÉRICO
+PARA k <-- 1 ATÉ n FAÇA PASSO 1
+INÍCIO
+	ESCREVA "Digite um valor:"
+	LEIA num
+	x[k] <-- num
+FIM
+PARA c <-- 1ATÉ n FAÇA PASSO 1
+INÍCIO
+	PARA p <-- 1 ATÉ n FAÇA PASSO 1	
+	INÍCIO
+		SE (x[c] < x[p])
+		ENTÃO	INÍCIO
+			i <-- x[p]
+		    	x[p] <-- x[c]
+		    	x[c] <-- i
+			FIM
+	FIM
+FIM
+anterior <-- x[0] + x[1]
+in = -1
+PARA j <-- 1 ATÉ n FAÇA PASSO 1	
+INÍCIO
+	repete <-- -1
+	PARA l <-- 1 ATÉ n FAÇA PASSO 1
+	INÍCIO
+		SE (x[j] = x[l])
+		ENTÃO repete <-- repete + 1
+	FIM
+	SE (x[j] != anterior E repete > 0:)
+	ENTÃO	INÍCIO
+		z[j] <-- x[j]
+		ESCREVA "Número:", x[j], "\nRepetições:", repete
+		FIM
+	SENÃO SE (x[j] = anterior)
+	ENTÃO	INÍCIO
+		in = in + 1
+		repetidos[in]<--x[j]
+		FIM
+	SENÃO	INÍCIO
+		z[j] <-- x[j]
+		anterior <-- x[j]
+		FIM
+FIM
+x <-- z
+ESCREVA "Repetidos:", repetidos
+FIM_ALGORITMO.

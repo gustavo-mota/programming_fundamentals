@@ -1,0 +1,14 @@
+ALGORITMO
+DECLARE n,h,denominador NUMÉRICO
+ESCREVA "Digite um valor"
+LEIA n
+h<==0
+denominador<==1
+ENQUANTO (denominador<=n) FAÇA
+INÍCIO
+    	h<==h+1/denominador
+    	denominador<==denominador+1
+FIM
+ESCREVA h
+
+FIM_ALGORITMO

@@ -1,0 +1,16 @@
+ALGORITMO
+DECLARE a,b,i,mdc NUMÉRICO
+ESCREVA "Digite um valor"
+LEIA a
+ESCREVA "Digite um segundo valor"
+LEIA b
+i<==1
+ENQUANTO (i<=a E i<=b) FAÇA
+INÍCIO
+	SE (a MOD i =0) E (b MOD 1 =0)
+        ENTÃO mdc<==i
+    	i<==i+1
+FIM
+i<==i-1
+ESCREVA i
+FIM_ALGORITMO

@@ -1,0 +1,27 @@
+ALGORITMO
+DECLARE x[15], i, soma, n, k, fat, j, l, i NUMÉRICO
+soma<--0
+ESCREVA "Digite um número"
+LEIA n
+n<--n*3,14/180
+i<--0
+PARA k<--1 ATÉ 30 FAÇA PASSO 2
+INÍCIO
+	fat <-- 1
+	PARA j<--1 ATÉ k FAÇA PASSO 1
+	INÍCIO
+		fat <-- fat * j
+	FIM
+	x[i]<--n**k/fat
+	i<--i+1
+FIM
+PARA l<--0 ATÉ 15 FAÇA PASSO 1
+INÍCIO
+	SE (l MOD 2 = 0)
+	ENTÃO soma<--soma + x[l]
+
+	SENÃO SE (l MOD 2 != 0)
+	ENTÃO  soma<--soma – x[l]
+FIM
+ESCREVA soma
+FIM_ALGORITMO.

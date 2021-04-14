@@ -1,0 +1,30 @@
+ALGORITMO
+DECLARE	contador,maior,menor,soma,media,i,temp,lista[121] NUMERICO
+contador<--1
+maior<--0
+menor<--0
+soma<--0
+temp<--0
+media<--0
+ENQUANTO (contador<121) FAÇA
+INÍCIO
+	ESCREVA "Digite a temperatura do", contador,"º dia"
+	LEIA temp
+	SE temp<menor
+	ENTÃO menor<--temp
+	SE temp>maior
+	ENTÃO maior<--temp
+	soma<--soma+temp
+	contador<--contador+1
+FIM
+media<--soma/121
+ESCREVA "Temperatura média no intervalo de dias:", media
+ESCREVA "Maior temperatura registrada:", maior
+ESCREVA "Menor temperatura registrada:", menor
+PARA i<--1 ATÉ 121 FAÇA
+INÍCIO
+	SE lista[i]<media
+	ENTÃO dias<--dias+1
+FIM
+ESCREVA "Foram", dias, "dias com temperaturas abaixo da média"
+FIM_ALGORITMO

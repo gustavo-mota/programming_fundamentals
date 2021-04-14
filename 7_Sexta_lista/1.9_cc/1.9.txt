@@ -1,0 +1,19 @@
+ALGORITMO
+DECLARE ordem, x,y,numero NUMÉRICO
+LEIA ordem
+x <-- 1
+y <-- 1
+ESCREVA x, end=" " 
+ESCREVA y, end=" "
+PARA i <-- 3 ATÉ ordem FAÇA
+INÍCIO
+	numero <--- fibo(x,y)
+	ESCREVA numero, end=" "
+	y <-- x
+	x <-- numero
+FIM
+SUB-ROTINA fibo(valor1 NUMÉRICO, valor2 NUMÉRICO)
+DECLARE num NUMÉRICO
+num <--valor1 + valor2
+RETORNE num
+FIM_SUB-ROTINA

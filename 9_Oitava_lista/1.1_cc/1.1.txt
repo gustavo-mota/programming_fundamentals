@@ -1,0 +1,28 @@
+ALGORITMO
+DECLARE i,somas,somaj,maior,contador,media_salarial,media_filhos NUMÉRICO
+	pesquisa[i]REGISTRO(
+	salario,
+	idade,
+	filhos NUMÉRICO
+	sexo LITERAL)
+somas <-- 0
+somaj <-- 0
+maior <-- 0
+contador <-- 0
+PARA i<-- 1 ATÉ 20:
+INÍCIO
+	LEIA pesquisa[i].salario
+	LEIA pesquisa[i].idade
+	LEIA pesquisa[i].filhos
+	LEIA pesquisa[i].sexo
+	SE maior < LEIA pesquisa[i].salario
+	ENTÃO maior <-- pesquisa[i].salario
+	somaj <-- somaj + pesquisa[i].filhos
+	somas <-- somas + pesquisa[i].salario
+	SE pesquisa[i].sexo = F E pesquisa[i].salario>=10000
+	ENTÃO contador <-- contador + 1
+FIM
+media_salarial <-- somas/20
+media_filhos <-- somaj/20
+ESCREVA media_salarial, media_filhos, maior,contador
+FIM_ALGORITMO

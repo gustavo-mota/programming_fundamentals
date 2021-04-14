@@ -1,0 +1,20 @@
+ALGORITMO
+DECLARE ordem,numero NUMÉRICO
+LEIA ordem
+numero <-- fibo(ordem)
+ESCREVA numero
+FIM_ALGORITMO
+SUB-ROTINA fibo(ordem NUMÉRICO)
+DECLARE i,num,x,y
+x <-- 1
+y <-- 1
+i <-- 1
+ENQUANTO i <= ordem-2 FAÇA
+INÍCIO
+	num <-- x + y
+	y <-- x
+	x <-- num
+	i <-- i + 1
+FIM
+RETORNE num
+FIM_SUB-ROTINA fibo

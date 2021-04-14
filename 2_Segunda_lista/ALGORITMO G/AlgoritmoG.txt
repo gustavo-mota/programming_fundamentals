@@ -1,0 +1,18 @@
+ALGORITMO
+DECLARE idade NUMÉRICO
+ESCREVA "Qual a sua idade?Digite:"
+LEIA idade
+SE 5<=idade<=7
+ENTÃO ESCREVA "Categoria Infanto"
+SE 8 <= idade <= 10
+ENTÃO ESCREVA "Categoria Infanto-Juvenil"
+SE 11<=idade<=15
+ENTÃO ESCREVA "Categoria Juvenil"
+SE 16<=idade<=30
+ENTÃO ESCREVA "Categoria Adulto"
+SE idade>30
+ENTÃO ESCREVA "Categoria Master"
+SENÃO
+ESCREVA "Idade inválida.Idades aceitaveis apenas a maiores ou iguais a cinco anos"
+
+FIM_ALGORITMO

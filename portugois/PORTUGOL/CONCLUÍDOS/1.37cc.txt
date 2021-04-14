@@ -1,0 +1,52 @@
+ALGORITMO
+DECLARE somaltura,saf,j,maior,menor,fem,total,media,mediafem,altura NUMÉRICO
+somaltura<==0
+saf<==0
+j<==1
+maior<==0
+menor<==2
+fem<==0
+total<==0
+ENQUANTO (j<=50) FAÇA
+INÍCIO
+    	codigo=int(input("digite o código: "))
+    	SE (codigo!=1) E (codigo!=2)
+        ENTÃO ESCREVA "Código inválido."
+    	SENÃO	INÍCIO
+
+		ESCREVA "Digite a altura"
+		LEIA altura
+
+        	SE (codigo=1)
+		ENTÃO	INÍCIO
+            		somaltura<==somaltura+altura
+            		total<==total+1
+	         	SE (altura>maior)
+                	ENTÃO maior<==altura
+            		SE altura<menor
+                	ENTÃO menor<==altura
+			FIM
+
+        	SENÃO	INÍCIO
+        		somaltura<==somaltura+altura
+	            	saf<==saf+altura
+            		fem<==fem+1
+            		total<==total+1
+            		SE (altura>maior)
+                	ENTÃO maior<==altura
+            		SE (altura<menor)
+                	ENTÃO menor<==altura
+			FIM
+
+		FIM
+	j<==j+1
+FIM
+
+mediafem<==saf/fem
+media<==somaltura/total
+ESCREVA "Media de alturas:", media
+ESCREVA "Média de alturas femininas:", mediafem
+ESCREVA "Maior altura:", maior
+ESCREVA "Menor altura:", menor
+
+FIM_ALGORITMO

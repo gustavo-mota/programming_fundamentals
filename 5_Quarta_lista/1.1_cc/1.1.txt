@@ -1,0 +1,15 @@
+ALGORITMO
+DECLARE s, lista[100], j, i NUMÉRICO
+i<--200
+j<--1
+ENQUANTO (i>=100) FAÇA
+INÍCIO
+	lista[j]<--i
+	i<--i-1
+	j<--j+1
+FIM 
+PARA CADA s<--1 ATÉ 100 FAÇA PASSO 1
+INÍCIO
+	ESCREVA lista[s]
+FIM
+FIM_ALGORITMO

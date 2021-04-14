@@ -1,0 +1,14 @@
+ALGORITMO
+DECLARE	continua = VERDADEIRO LÓGICO
+	produto, n NUMÉRICO
+produto<==1
+ENQUANTO (continua) FAÇA
+INÍCIO
+	ESCREVA"Digite um algarismo(Digite zero se quiser parar)"
+	LEIA n
+	SE n==0 
+	ENTÃO continua=FALSO
+	SENÃO produto=produto*n
+FIM
+ESCREVA produto
+FIM_ALGORITMO

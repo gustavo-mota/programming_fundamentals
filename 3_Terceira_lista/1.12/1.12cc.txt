@@ -1,0 +1,12 @@
+ALGORITMO
+DECLARE n,j NUMÉRICO
+ESCREVA "Digite um valor"
+LEIA n
+j<==1
+ESCREVA "Os seguintes valores são os multiplos de 3 e 5 ao mesmo tempo.Se nenhum surgir, significa que não nenhum há naquele intervalo")
+ENQUANTO (j<=n) FAÇA
+INÍCIO
+	SE (j MOD 3==0) E (j MOD 5==0)
+        ENTÃO ESCREVA j
+    	j<==j+1
+FIM_ALGORITMO

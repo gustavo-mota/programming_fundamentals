@@ -1,0 +1,22 @@
+ALGORITMO
+DECLARE	denominador, resultado,x,i NUMÉRICO
+denominador<==2
+i<==1
+resultado<==0
+x<==1
+ENQUANTO (i<=100) FAÇA
+INÍCIO
+	SE (i MOD 2 =0)
+	ENTÃO	INÍCIO
+        x<==x+(1/denominador)
+        resultado<==resultado+x
+		FIM
+	SENÃO	INÍCIO
+        	x<==x-(1/denominador)
+        	resultado<==resultado+x
+		FIM
+    	i<==i+1
+    	denominador<==denominador+2
+FIM
+ESCREVA "Resultado e:", x
+FIM_ALGORITMO

@@ -1,0 +1,43 @@
+ALGORITMO
+DECLARE num, multiplicador,produto NUMÉRICO
+LEIA num
+LEIA multiplicador
+multiplicacao <-- multiplica(num, multiplicador)
+produto<--sinal(num,multiplicador,multiplicacao)
+ESCREVA produto
+FIM_ALGORITMO
+
+SUB-ROTINA multiplica(numero NUMÉRICO, multi NUMÉRICO)
+DECLARE resultado, i, vezes NUMÉRICO 
+SE numero<0
+ENTÃO numero <-- numero * -1
+SE multi < 0 
+ENTÃO multi <-- multi * -1
+SE multi = 0
+ENTÃO resultado<--0
+SENÃO SE multi = 1
+ENTÃO resultado <-- numero
+SENÃO	INÍCIO
+	vezes<--0
+	ENQUANTO multi!=1 FAÇA
+	INÍCIO
+		multi<-- multi - 1
+		vezes<-- vezes + numero
+	FIM
+	PARA i<--1 ATÉ vezes FAÇA
+	INÍCIO
+		numero <-- numero + 1
+	FIM
+	resultado <-- numero
+	FIM
+RETORNE resultado
+FIM_SUB-ROTINA
+
+SUB-ROTINA sinal(valor1 NUMÉRICO, valor2 NUMÉRICO, result NUMÉRICO)
+DECLARE 
+SE (valor1<0) E (valor2>0)
+ENTÃO result <-- result * -1
+SENÃO SE (valor1>0) E (valor2<0)
+ENTÃO result <-- result * -1
+RETORNE result
+FIM_SUB-ROTINA

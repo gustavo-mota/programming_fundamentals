@@ -1,0 +1,13 @@
+ALGORTIMO
+DECLARE salario, horas, horas2, salario_bruto, salario_final, het NUMÉRICO
+ESCREVA(“Digite o salario mínimo vigente: “)
+LEIA salario
+ESCREVA(“Digite as horas trabalhadas “)
+LEIA horas
+ESCREVA(“Digite as horas extras trabalhadas: “)
+LEIA horas2
+Salario_bruto <== (0.125*salario)*horas
+Het <== (0.25*salario)*horas2
+Salario_final <== salario_bruto+het
+ESCREVA(“O salario a pagar eh: “, salario_final)
+FIM_ALGORITMO

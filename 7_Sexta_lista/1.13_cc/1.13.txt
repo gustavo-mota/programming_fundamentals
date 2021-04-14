@@ -1,0 +1,24 @@
+ALGORITMO
+DECLARE n,s,i NUMÉRICO
+LEIA n
+DECLARE vetor[n]
+PARA i<--1 ATÉ n FAÇA
+INÍCIO
+	LEIA vetor[i]
+FIM
+inverte(vetor)
+PARA s<--1 ATÉ n  FAÇA
+INÍCIO
+	ESCREVA vetor[s]
+FIM
+FIM_ALGORITMO
+SUB-ROTINA inverte(lista[n] NUMÉRICO)
+DECLARE invertido[n],b,x NUMÉRICO
+X <-- 0
+PARA b<-- 1 ATÉ n FAÇA
+INÍCIO
+	invertido[b] <-- lista[n-x]
+	x <-- x + 1
+FIM
+RETORNE invertido
+FIM_SUB-ROTINA

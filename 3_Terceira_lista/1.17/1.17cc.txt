@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE A, B, r, quociente, S NUMÉRICO
+ESCREVA "Valor A"
+LEIA A
+ESCREVA "Valor B"
+LEIA B
+SE (B<0)
+ENTÃO B<==B*-1
+SE (A<0)
+ENTÃO A<==A*-1
+SE (A<B)
+ENTÃO	INÍCIO
+    	S<==A-B
+    	ESCREVA "Não se divide"
+	FIM
+r<==A
+ENQUANTO (r>B) FAÇA
+	r=r-B
+
+quociente<==r+5
+ESCREVA "Quociente eh:", quociente
+ESCREVA "O resto eh:", r
+FIM_ALGORITMO

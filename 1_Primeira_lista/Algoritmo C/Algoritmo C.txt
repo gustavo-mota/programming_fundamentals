@@ -1,0 +1,11 @@
+ALGORITMO
+DECLARE salario, vendas, comissao, salario_final NUMÉRICO
+ESCREVA(“Digite o salario: “)
+LEIA salario
+ESCREVA(“Digite as vendas: “)
+LEIA vendas
+comissao <== vendas*0.04
+ salario_final <== comissao + salario
+ESCREVA(“A comissao eh: “, comissao)
+ESCREVA(“O salario final eh: “, salario_final)
+FIM_ALGORITMO
