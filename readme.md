@@ -17,15 +17,15 @@ This repository makes public various programming exercises. Basic algorithms wri
 ## Organization
 I divide between list folders and algorithm folders. The organization is still being improved.
 
-- [Exercises #01](/1_Primeira_lista/)
-- [Exercises #02]()
-- [Exercises #03]()
-- [Exercises #04]()
-- [Exercises #05]()
-- [Exercises #06]()
-- [Exercises #07]()
-- [Exercises #08]()
-- [Exercises #09]()
+- [Exercises #01](/1_Primeira_lista/) PDF
+- [Exercises #02](/2_Segunda_lista/) PDF
+- [Exercises #03](/3_Terceira_lista/) PDF
+- [Exercises #04](/5_Quarta_lista/) PDF
+- [Exercises #05](/6_Quinta_lista/) PDF
+- [Exercises #06](/7_Sexta_lista/) PDF
+- [Exercises #07](/8_Sétima_lista/) PDF
+- [Exercises #08](/9_Oitava_lista/) PDF
+- [Exercises #09](/10_Nona_lista/) PDF
 - [Exercises #10]()
 
 ## Execution
