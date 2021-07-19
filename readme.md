@@ -3,19 +3,16 @@
 
 ## About the repository
 
-This repository makes public a lot of exercises of programming fundamentals. Basics algorithms made up with Python 3.
-You will find out them as they are when I submit
-
-This repository makes public various programming exercises. Basic algorithms written in Python 3 and [Portugol](https://pt.wikipedia.org/wiki/Portugol) pseudocode.
+This repository makes public various programming exercises and my resolutions. Basic algorithms written in [Python 3](https://www.python.org/downloads/) and [Portugol](https://pt.wikipedia.org/wiki/Portugol) pseudocode. 
 
 ## Warnings
- - You will find them as they were when I submitted them, so you may find errors. Some files may be missing.
+ - You will find them as they were when I submitted them in 2017, so you may find errors. Some files may be missing. I'm working on it.
  - Some PDFs with it's questions are missing, so I'm working recreating by what the code appear to do. You will be adviced in the Index section.
  - PDFs autors isn't me, and didn't include me. References in the PDFs.
  - This repository is still being built. Something new could appear :)
 
 ## Organization
-I divide between list folders and algorithm folders. The organization is still being improved.
+I divide between list folders and algorithm folders. The organization is still being improved. Use readme files to navigation.
 
 - [Exercises #01](/1_Primeira_lista/) [PDF](/1_Primeira_lista/ListaExercicios1_Estrutura_Sequencial.pdf)
 - [Exercises #02](/2_Segunda_lista/) PDF
