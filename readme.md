@@ -1,5 +1,5 @@
 # Programming Fundamentals
-# Python and Portguol Exercises
+# Python and Portugol Exercises
 
 ## About the repository
 
