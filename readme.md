@@ -17,6 +17,17 @@ This repository makes public various programming exercises. Basic algorithms wri
 ## Organization
 I divide between list folders and algorithm folders. The organization is still being improved.
 
+[Exercises #01](/1_Primeira_lista/)
+[Exercises #02]()
+[Exercises #03]()
+[Exercises #04]()
+[Exercises #05]()
+[Exercises #06]()
+[Exercises #07]()
+[Exercises #08]()
+[Exercises #09]()
+[Exercises #10]()
+
 ## Execution
 > Python files
 * `$ python3 file.py`
