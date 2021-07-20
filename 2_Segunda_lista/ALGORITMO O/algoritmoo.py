@@ -1,5 +1,4 @@
 #Algoritmo item O
-#Gustavo Antonio Sousa Paz E Mota
 a = float(input("Digite um valor: "))
 b = float(input("Digite outro valor: "))
 c = float(input("Digite mais outro valor: "))

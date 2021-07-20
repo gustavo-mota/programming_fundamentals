@@ -1,5 +1,4 @@
 #Algoritmo item I
-#Gustavo Antonio Sousa Paz E Mota
 print("Calcular raizes de equacoes de segundo grau")
 a = int(input("Digite o valor de A: "))
 b = int(input("Digite o valor de b: "))

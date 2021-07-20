@@ -1,5 +1,4 @@
 #Algoritmo item G
-#Gustavo Antonio Sousa Paz E Mota
 idade = int(input("Qual a sua idade? Digite: "))
 if 5<= idade <= 7:
     print("Categoria Infanto")

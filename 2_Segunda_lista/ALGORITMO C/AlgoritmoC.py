@@ -1,5 +1,4 @@
 #Algortimo item C
-#Gustavo Antonio Sousa Paz E Mota
 saldomedio = float(input("Digite o saldo medio do ano anterior de determinado cliente: "))
 if saldomedio <= 200:
     credito = (saldomedio*0.1)

@@ -1,5 +1,4 @@
 #Algoritmo item D
-#Gustavo Antonio Sousa Paz E Mota
 preco = float(input("Digite o preco do produto; "))
 if preco<=50:
     preco = (preco*0.05)+preco

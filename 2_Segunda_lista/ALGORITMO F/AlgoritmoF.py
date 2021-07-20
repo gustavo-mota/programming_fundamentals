@@ -1,5 +1,4 @@
 #Algoritmo item F
-#Gustavo Antonio Sousa Paz E Mota
 altura = float(input("Digite sua altura: "))
 sexo = str(input("Digite seu gênero (H para homem e M para mulher, letras maicúsculas): "))
 if sexo == "H":

@@ -1,5 +1,4 @@
 #Algoritmo item Q
-#Gustavo Antonio Sousa Paz E Mota
 a = float(input("Digite o valor para cacular f(x): "))
 if a <= 1:
 	print("F(x) e:",1)

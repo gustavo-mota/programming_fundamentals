@@ -1,5 +1,4 @@
 #Algoritmo M
-#Gustavo Antonio Sousa Paz E Mota
 x = float(input("Digite o valor que possui em reais: "))
 dolar = x/3.95
 alemao = x/4.25

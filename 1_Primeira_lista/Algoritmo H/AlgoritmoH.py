@@ -1,5 +1,4 @@
 #algoritmo item H
-#Gustavo Antonio Sousa Paz E Mota
 x = int(input("Digite o valor que queira achar tabuada: "))
 y = x*10
 i = 0

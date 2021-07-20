@@ -1,5 +1,4 @@
 #Algoritmo item P
-#Gustavo Antonio Sousa Paz E Mota
 a = int(input("Digite o primeiro valor: "))
 b = int(input("Digite o segundo valor: "))
 c = int(input("Digite o terceiro valor: "))

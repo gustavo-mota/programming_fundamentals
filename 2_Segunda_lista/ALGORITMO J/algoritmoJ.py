@@ -1,5 +1,4 @@
 #Algortimo item J
-#Gustavo Antonio Sousa Paz E Mota
 print("Teste: saber se determinado numero e ou nao multiplo de tres")
 a = int(input("Digite um valor: "))
 r = a%3

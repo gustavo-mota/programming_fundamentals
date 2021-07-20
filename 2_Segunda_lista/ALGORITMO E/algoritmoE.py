@@ -1,5 +1,4 @@
 #Algoritmo item E
-#Gustavo antonio sousa Paz e Mota
 investimento = float(input("Digite o valor do investimento: "))
 tipo = str(input("Digite o tipo de investimento(P para poupança e F para fundo de renda fixa):"))
 if tipo == "P":

@@ -1,5 +1,4 @@
 #algoritmo item L
-#Gustavo Antonio Sousa Paz E Mota
 horas = int(input("Digite o numero de horas trabalhadas: "))
 salario = float(input("DIgite o valor do slario minimo vigente: "))
 horas2 = int(input("Digite o numero de horas extras trabalhadas: "))

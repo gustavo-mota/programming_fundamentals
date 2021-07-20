@@ -1,5 +1,4 @@
 #algoritimo item i
-#Gustavo Antonio Sousa Paz E Mota
 anoatual = int(input("Digite o ano atual: "))
 anonascimento = int(input("Digite o ano de nasciemnto: "))
 idade = anoatual-anonascimento

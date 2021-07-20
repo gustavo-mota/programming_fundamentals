@@ -1,5 +1,4 @@
 #Algoritmo item H
-#Gustavo Antonio sousa Paz E mota
 idade = int(input("Digite a sua idade: "))
 peso  = float(input("Digite seu peso: "))
 if idade <= 20:
